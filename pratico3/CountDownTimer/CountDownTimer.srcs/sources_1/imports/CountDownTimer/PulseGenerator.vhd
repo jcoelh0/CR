@@ -40,20 +40,23 @@ begin
 		        
 		        if (s_counter = 0) then
 		            pulse1Hz <= '1';
-		            pulse2Hz <= '1';
 		            blink1Hz <= '1';
-		            blink2Hz <= '1';
 		        else
 		            pulse1Hz <= '0';
-		            pulse2Hz <= '0';
 		            if (s_counter = 50000000) then
 		                blink1Hz <= '0';
 		            end if;
-		            if (s_counter = 25000000) then
+		        end if;
+		        
+		        if (s_counter = 0 or s_counter = 50000000) then
+		            pulse2Hz <= '1';
+		            blink2Hz <= '1';
+		        else
+		            pulse2Hz <= '0';
+		            if (s_counter = 25000000 or s_counter = 75000000) then
 		                blink2Hz <= '0';
 		            end if;
 		        end if;
-		        		        
 				s_counter <= s_counter + 1;
 			end if;
 		end if;

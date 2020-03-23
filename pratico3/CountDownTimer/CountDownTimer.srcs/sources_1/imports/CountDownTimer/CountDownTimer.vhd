@@ -48,14 +48,14 @@ begin
 
     pulse_generator : entity work.PulseGenerator(Behavioral)
                         port map(clk100MHz  => clk,
-                                 dispRefEn  => s_dispRefEn,
+                                 pulseDisplay => s_dispRefEn,
                                  pulse2Hz   => s_2HzEn,
                                  pulse1Hz   => s_1HzEn,
                                  blink2Hz   => s_blink2Hz,
                                  blink1Hz   => s_blink1Hz);
 
     start_but_debouncer : entity work.DebounceUnit(Behavioral)
-                        generic map(kHzClkFreq      => 100000,
+                        generic map(refClk      => 100000,
                                     mSecMinInWidth  => 100,
                                     inPolarity      => '1',
                                     outPolarity     => '1')
@@ -122,7 +122,7 @@ begin
     s_digitEn <= ;
     s_decPtEn <= ;
 
-    display_driver : entity work.Nexys4DisplayDriver(Behavioral)
+    display_driver : entity work.Nexys4DispDriver(Behavioral)
                         port map(clk        => clk,
                                  enable     => , 
                                  digitEn    => s_digitEn,     
