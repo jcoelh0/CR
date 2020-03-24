@@ -10,3 +10,20 @@
 # Journal file: C:/Users/jcoel/Desktop/CR/pratico3/CountDownTimer\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/jcoel/Desktop/CR/pratico3/CountDownTimer/CountDownTimer.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 771.914 ; gain = 105.066
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/jcoel/Desktop/CR/pratico3/CountDownTimer/CountDownTimer.srcs/sources_1/new/CountDatapath.vhd w ]
+add_files C:/Users/jcoel/Desktop/CR/pratico3/CountDownTimer/CountDownTimer.srcs/sources_1/new/CountDatapath.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 24 10:58:03 2020...

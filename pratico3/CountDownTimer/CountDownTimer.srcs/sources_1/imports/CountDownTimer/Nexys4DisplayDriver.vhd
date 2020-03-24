@@ -34,6 +34,7 @@ use IEEE.NUMERIC_STD.all;
 
 entity Nexys4DispDriver is
     port(clk     : in  std_logic;
+       enable    : in  std_logic;
        digitEn   : in  std_logic_vector(7 downto 0);
        digVal0   : in  std_logic_vector(3 downto 0);
        digVal1   : in  std_logic_vector(3 downto 0);

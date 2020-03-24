@@ -10,3 +10,12 @@
 # Journal file: C:/Users/jcoel/Desktop/CR/pratico3/CountDownTimer\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/jcoel/Desktop/CR/pratico3/CountDownTimer/CountDownTimer.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/jcoel/Desktop/CR/pratico3/CountDownTimer/CountDownTimer.srcs/sources_1/new/CountDatapath.vhd w ]
+add_files C:/Users/jcoel/Desktop/CR/pratico3/CountDownTimer/CountDownTimer.srcs/sources_1/new/CountDatapath.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

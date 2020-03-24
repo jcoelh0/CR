@@ -32,8 +32,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity DebounceUnit is
-    generic(clkFrekHz	: positive;
-			  blindmSec	: positive;
+    generic(kHzClkFreq	: positive;
+			  mSecMinInWidth	: positive;
 			  inPol		: std_logic;
 			  outPol	: std_logic);
 	port(reset			: in  std_logic;
@@ -76,7 +76,7 @@ begin
 					s_debounceCnt <= s_debounceCnt - 1;
 					s_resetPulse  <= '1';
 				elsif (s_pulsedOut = outPol) then
-					s_debounceCnt <= blindmSec * clkFrekHz;
+					s_debounceCnt <= mSecMinInWidth * kHzClkFreq;
 					s_resetPulse  <= '1';
 				else
 					s_resetPulse  <= '0';

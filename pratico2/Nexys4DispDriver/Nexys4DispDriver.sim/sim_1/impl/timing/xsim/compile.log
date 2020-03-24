@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jcoel/Desktop/CR/pratico2/Nexys4DispDriver/Nexys4DispDriver.sim/sim_1/impl/timing/xsim/DisplayDemo_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDividerN
+INFO: [VRFC 10-311] analyzing module DisplayDemo
+INFO: [VRFC 10-311] analyzing module Nexys4DispDriver
+INFO: [VRFC 10-311] analyzing module glbl

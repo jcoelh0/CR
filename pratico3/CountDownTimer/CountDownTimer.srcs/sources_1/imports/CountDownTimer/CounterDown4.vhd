@@ -33,7 +33,7 @@ begin
                    s_value <= s_value + 1;
                end if; 
            elsif ((setDecrem = '1') or ( (clkEnable = '1') and (cntEnable = '1')) ) then 
-               if(s_value = 0) then
+               if(s_value = 0) then 
                    s_value <= MAX_VAL;
                else
                    s_value <= s_value - 1;
