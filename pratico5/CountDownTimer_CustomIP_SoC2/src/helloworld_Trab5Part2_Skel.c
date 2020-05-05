@@ -384,7 +384,7 @@ int main()
 
 					// Digit set increment/decrement
 					SetCountDownTimer(fsmState, &buttonStatus, &timerValue);
-					//TimerValue2DigitValues(&timerValue, digitValues);
+					TimerValue2DigitValues(&timerValue, digitValues);
 					
 
 					if (hwTmrEventCount == 8) // 1Hz
