@@ -1,0 +1,680 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 13040
+License: Customer
+
+Current time: 	Tue May 19 16:14:30 BST 2020
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 32 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	jcoel
+User home directory: C:/Users/jcoel
+User working directory: C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/jcoel/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/jcoel/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/jcoel/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/vivado.log
+Vivado journal file location: 	C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/vivado.jou
+Engine tmp dir: 	C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/.Xil/Vivado-13040-DESKTOP-T839HQ8
+
+Xilinx Environment Variables
+----------------------------
+KINECTSDK20_DIR: C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_SDK: C:/Xilinx/Vitis/2019.2
+XILINX_VITIS: C:/Xilinx/Vitis/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	188 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 669 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\jcoel\Desktop\CR\pratico7\StreamCopDemo\StreamCopDemo.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 696 MB. GUI used memory: 50 MB. Current time: 5/19/20, 4:14:32 PM BST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 77 MB (+77859kb) [00:00:15]
+// [Engine Memory]: 707 MB (+590076kb) [00:00:16]
+// [GUI Memory]: 109 MB (+29511kb) [00:00:16]
+// [Engine Memory]: 745 MB (+2631kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  4248 ms.
+// Tcl Message: open_project C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jcoel/Desktop/CR/pratico7/ip_repo/ReverseEndianessCop_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 804.023 ; gain = 132.383 
+// Project name: StreamCopDemo; location: C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo; part: xc7a100tcsg324-1
+// [Engine Memory]: 809 MB (+28116kb) [00:00:21]
+dismissDialog("Open Project"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 861 MB. GUI used memory: 60 MB. Current time: 5/19/20, 4:14:47 PM BST
+// [Engine Memory]: 861 MB (+11726kb) [00:00:28]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 20 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_design_wrapper(STRUCTURE) (mb_design_wrapper.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_design_wrapper(STRUCTURE) (mb_design_wrapper.vhd), mb_design_i : mb_design (mb_design.bd)]", 2, true); // B (F, cr) - Node
+// [GUI Memory]: 118 MB (+3967kb) [00:00:42]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_design_wrapper(STRUCTURE) (mb_design_wrapper.vhd), mb_design_i : mb_design (mb_design.bd)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// bB (cr):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/mb_design.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 906 MB (+1845kb) [00:00:50]
+// WARNING: HEventQueue.dispatchEvent() is taking  2628 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 920 MB. GUI used memory: 65 MB. Current time: 5/19/20, 4:15:13 PM BST
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 938.020 ; gain = 0.000 
+dismissDialog("Open Block Design"); // bB (cr)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 265, 279, 1065, 398, false, false, false, true, false); // go (i, cr) - Popup Trigger
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_BLOCK_DESIGN, "Open Block Design"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // af (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cr): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectRadioButton(PAResourceItoN.NewIpWizard_CREATE_NEW_AXI4_IP_CREATE_AXI4, "Create a new AXI4 peripheral. Create an AXI4 IP, driver, software test application, IP Integrator AXI4 VIP simulation and debug demonstration design."); // b (a, Q)
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+setText(PAResourceItoN.NewIpWizard_NAME_MYIP, "PopulationC"); // ac (Q)
+setText(PAResourceItoN.NewIpWizard_NAME_MYIP, "PopulationCount"); // ac (Q)
+// Elapsed time: 10 seconds
+setText(PAResourceItoN.NewIpWizard_DESCRIPTION_MY_NEW_AXI_IP, "My new Population Counter IP"); // ac (Q)
+// Elapsed time: 16 seconds
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("BACK", "< Back"); // JButton (j, Q)
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+// Elapsed time: 65 seconds
+selectButton(PAResourceItoN.NewIpWizard_ADD_NEW_INTERFACE, (String) null); // k (f, Q)
+selectComboBox(PAResourceItoN.NewIpWizard_INTERFACE_MODE, "Master", 0); // e (E, Q)
+selectComboBox(PAResourceItoN.NewIpWizard_INTERFACE_TYPE, "Stream", 2); // e (E, Q)
+selectTree(PAResourceItoN.NewIpWizard_INTERFACES_TREE, "[Interfaces, S00_AXI]", 1, false); // ax (E, Q)
+selectComboBox(PAResourceItoN.NewIpWizard_INTERFACE_TYPE, "Stream", 2); // e (E, Q)
+// Elapsed time: 36 seconds
+selectCheckBox(PAResourceItoN.NewIpWizard_ENABLE_INTERRUPT_SUPPORT, "Enable Interrupt Support", true); // g (E, Q): TRUE
+selectCheckBox(PAResourceItoN.NewIpWizard_ENABLE_INTERRUPT_SUPPORT, "Enable Interrupt Support", false); // g (E, Q): FALSE
+// Elapsed time: 20 seconds
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("FINISH", "Finish"); // JButton (j, Q)
+// 'q' command handler elapsed time: 179 seconds
+dismissDialog("Create and Package New IP"); // Q (cr)
+// Tcl Message: create_peripheral xilinx.com user PopulationCount 1.0 -dir C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/../ip_repo 
+// Tcl Message: add_peripheral_interface S00_AXIS -interface_mode slave -axi_type stream [ipx::find_open_core xilinx.com:user:PopulationCount:1.0] 
+// Tcl Message: add_peripheral_interface M00_AXIS -interface_mode master -axi_type stream [ipx::find_open_core xilinx.com:user:PopulationCount:1.0] 
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: generate_peripheral [ipx::find_open_core xilinx.com:user:PopulationCount:1.0] 
+// Tcl Message: write_peripheral [ipx::find_open_core xilinx.com:user:PopulationCount:1.0] 
+// bB (cr):  Create Peripheral IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/../ip_repo/PopulationCount_1.0 C:/Users/jcoel/Desktop/CR/pratico7/ip_repo/ReverseEndianessCop_1.0} [current_project] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jcoel/Desktop/CR/pratico7/ip_repo/PopulationCount_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jcoel/Desktop/CR/pratico7/ip_repo/ReverseEndianessCop_1.0'. 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// [Engine Memory]: 956 MB (+5189kb) [00:04:01]
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+dismissDialog("Create Peripheral IP"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,011 MB. GUI used memory: 70 MB. Current time: 5/19/20, 4:18:22 PM BST
+// [Engine Memory]: 1,011 MB (+7178kb) [00:04:04]
+// Elapsed time: 12 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (f, cr)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "pop"); // OverlayTextField (ay, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "popu"); // OverlayTextField (ay, ResizableWindow)
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // L (O, ResizableWindow)
+// [GUI Memory]: 127 MB (+3608kb) [00:04:18]
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bB (cr):  Add IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:PopulationCount:1.0 PopulationCount_0 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bB (cr)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1854 ms.
+// Elapsed time: 11 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Symbol", 0); // bh (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Resources", 1); // bh (E, r)
+setText("Number of Stream Links", "2"); // D (bi, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cr)
+// Tcl Command: 'set_property -dict [list CONFIG.C_FSL_LINKS {2}] [get_bd_cells microblaze_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// r (cr): Re-customize IP: addNotify
+// bB (r):  Customize IP : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.C_FSL_LINKS {2}] [get_bd_cells microblaze_0] 
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bB (r)
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// [GUI Memory]: 138 MB (+4137kb) [00:05:01]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins PopulationCount_0/M00_AXIS] [get_bd_intf_pins microblaze_0/S1_AXIS] 
+// Elapsed time: 144 seconds
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (cu, cr)
+// w (cr): Run Connection Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (w)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_CONNECTION_CHANGE
+dismissDialog("Run Connection Automation"); // w (cr)
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_1/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins PopulationCount_0/m00_axis_aclk] 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,044 MB. GUI used memory: 79 MB. Current time: 5/19/20, 4:27:02 PM BST
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins PopulationCount_0/S00_AXIS] [get_bd_intf_pins microblaze_0/M1_AXIS] 
+// Elapsed time: 329 seconds
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (cu, cr)
+// w (cr): Run Connection Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (w)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_CONNECTION_CHANGE
+dismissDialog("Run Connection Automation"); // w (cr)
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_1/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins PopulationCount_0/s00_axis_aclk] 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 79 MB. Current time: 5/19/20, 4:27:17 PM BST
+// Elapsed time: 22 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 316, 246, 1065, 397, false, false, false, true, false); // go (i, cr) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cr): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bB (cr):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name PopulationCount_v1_0_project -directory C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.tmp/PopulationCount_v1_0_project c:/Users/jcoel/Desktop/CR/pratico7/ip_repo/PopulationCount_1.0/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/jcoel/desktop/cr/pratico7/streamcopdemo/streamcopdemo.tmp/populationcount_v1_0_project' 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  3172 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// WARNING: HEventQueue.dispatchEvent() is taking  1036 ms.
+// Tcl Message: create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1056.191 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jcoel/Desktop/CR/pratico7/ip_repo/PopulationCount_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jcoel/Desktop/CR/pratico7/ip_repo/ReverseEndianessCop_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1056.191 ; gain = 0.000 
+// 'i' command handler elapsed time: 9 seconds
+dismissDialog("Edit in IP Packager"); // bB (cr)
+// [GUI Memory]: 145 MB (+118kb) [00:13:33]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // i (h, cr)
+// [GUI Memory]: 155 MB (+3244kb) [00:13:33]
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - PopulationCount", 1); // i (h, cr)
+// [Engine Memory]: 1,064 MB (+3222kb) [00:13:34]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 194 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 24 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd)]", 1); // B (F, cr)
+// Elapsed time: 238 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 4); // B (F, cr)
+// Tcl Message: current_project StreamCopDemo 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// r (cr): Customize Pin: addNotify
+// Elapsed time: 814 seconds
+dismissDialog("Customize Pin"); // r (cr)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (cr):  Re-customize IP : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,156 MB. GUI used memory: 95 MB. Current time: 5/19/20, 4:49:13 PM BST
+// [Engine Memory]: 1,156 MB (+40076kb) [00:34:54]
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1398 ms.
+dismissDialog("Re-customize IP"); // O (cr)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 1); // cU (E, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // cU (E, r)
+// [GUI Memory]: 163 MB (+693kb) [00:37:20]
+// Elapsed time: 665 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - PopulationCount", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PopulationCount_v1_0.vhd", 2); // i (h, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 900, 168); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 357, 113); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 308, 198); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 161, 278); // ch (w, cr)
+// Elapsed time: 52 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 114, 282); // ch (w, cr)
+// Elapsed time: 338 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 210, 283); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 2, 156); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 224, 292); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: current_project PopulationCount_v1_0_project 
+// Elapsed time: 18 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 105, 372); // ch (w, cr)
+// Elapsed time: 24 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 124, 313); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 124, 313, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 130, 308); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 131, 308, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("PopulationCount_v1_0.vhd", 131, 308); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 131, 308, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("PopulationCount_v1_0.vhd", 107, 304); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 29, 92); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 40, 101); // ch (w, cr)
+// Elapsed time: 26 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 291, 96); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 322, 96); // ch (w, cr)
+// Elapsed time: 131 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 278, 96); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 219, 157); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 219, 157, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 207, 104, false, true, false, false, false); // ch (w, cr) - Control Key
+selectCodeEditor("PopulationCount_v1_0.vhd", 207, 104, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 210, 93); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 210, 93, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("PopulationCount_v1_0.vhd", 84, 217); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 262, 234); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 106, 242); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 233, 252); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 153, 236); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 442, 388); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 102, 305); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 407, 394); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 407, 394, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 454, 381); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 314, 387); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 342, 387); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 405, 385); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 405, 385, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("PopulationCount_v1_0.vhd", 416, 391); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 416, 391, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("PopulationCount_v1_0.vhd", 377, 390); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 281, 390); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 259, 388); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 360, 396); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 360, 396, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("PopulationCount_v1_0.vhd", 53, 386); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 53, 386, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("PopulationCount_v1_0.vhd", 189, 8); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 123, 386); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 129, 389); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 349, 394); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 348, 393, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("PopulationCount_v1_0.vhd", 174, 416); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'c'); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd)]", 1); // B (F, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 152, 220); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 152, 220); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 300, 89); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// k (cr): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (i, cr)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a (k)
+dismissDialog("Text Changed"); // k (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd)]", 1); // B (F, cr)
+// Elapsed time: 30 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 807, 230); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 807, 230, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 231, 96); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 243, 93); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 98, 252); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 97, 252, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("PopulationCount_v1_0.vhd", 107, 241); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 107, 241, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 281, 279); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 281, 279, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 287, 152); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 287, 152, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("PopulationCount_v1_0.vhd", 316, 163); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 342, 159); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("PopulationCount_v1_0.vhd", 127, 32); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 376, 303); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 160, 202); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 371, 384); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 368, 268); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 0, 263); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 1, 326); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("PopulationCount_v1_0.vhd", 213, 330); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd), PopulationCount_v1_0_S00_AXIS_inst : PopulationCount_v1_0_S00_AXIS(arch_imp) (PopulationCount_v1_0_S00_AXIS.vhd)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd), PopulationCount_v1_0_S00_AXIS_inst : PopulationCount_v1_0_S00_AXIS(arch_imp) (PopulationCount_v1_0_S00_AXIS.vhd)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 50 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PopulationCount_v1_0.vhd", 2); // i (h, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,195 MB. GUI used memory: 101 MB. Current time: 5/19/20, 5:19:13 PM BST
+// Elapsed time: 202 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 760, 75); // ch (w, cr)
+// Elapsed time: 119 seconds
+selectCodeEditor("PopulationCount_v1_0.vhd", 250, 185); // ch (w, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "C_S_AXIS_TDATA_WIDTH"); // l (aP, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "C_S_AXIS_TDATA_WIDTH"); // l (aP, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "C_S_AXIS_TDATA_WIDTH"); // l (aP, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 447, 220); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 90, 327); // ch (w, cr)
+typeControlKey((HResource) null, "PopulationCount_v1_0.vhd", 'v'); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (F, cr) - Node
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd), PopulationCount_v1_0_M00_AXIS_inst : PopulationCount_v1_0_M00_AXIS(implementation) (PopulationCount_v1_0_M00_AXIS.vhd)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd), PopulationCount_v1_0_M00_AXIS_inst : PopulationCount_v1_0_M00_AXIS(implementation) (PopulationCount_v1_0_M00_AXIS.vhd)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 204 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd), PopulationCount_v1_0_M00_AXIS_inst : PopulationCount_v1_0_M00_AXIS(implementation) (PopulationCount_v1_0_M00_AXIS.vhd)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd), PopulationCount_v1_0_M00_AXIS_inst : PopulationCount_v1_0_M00_AXIS(implementation) (PopulationCount_v1_0_M00_AXIS.vhd)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd), PopulationCount_v1_0_S00_AXIS_inst : PopulationCount_v1_0_S00_AXIS(arch_imp) (PopulationCount_v1_0_S00_AXIS.vhd)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PopulationCount_v1_0(arch_imp) (PopulationCount_v1_0.vhd), PopulationCount_v1_0_S00_AXIS_inst : PopulationCount_v1_0_S00_AXIS(arch_imp) (PopulationCount_v1_0_S00_AXIS.vhd)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PopulationCount_v1_0.vhd", 2); // i (h, cr)
+// Elapsed time: 379 seconds
+selectButton((HResource) null, "Sources_settings"); // x (f, cr): TRUE
+selectCodeEditor("PopulationCount_v1_0.vhd", 172, 173); // ch (w, cr)
+// Elapsed time: 93 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PopulationCount_v1_0.vhd", 2); // i (h, cr)
+selectCodeEditor("PopulationCount_v1_0.vhd", 190, 231, false, true, false, false, false); // ch (w, cr) - Control Key
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("PopulationCount_v1_0.vhd", 446, 264); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 85 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 2); // i (N, cr)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ar (O, cr)
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "AXI_Peripheral", 0); // x (O, cr)
+closeMainWindow("PopulationCount_v1_0_project - [c:/users/jcoel/desktop/cr/pratico7/streamcopdemo/streamcopdemo.tmp/populationcount_v1_0_project/PopulationCount_v1_0_project.xpr] - Vivado 2019.2"); // cr
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'

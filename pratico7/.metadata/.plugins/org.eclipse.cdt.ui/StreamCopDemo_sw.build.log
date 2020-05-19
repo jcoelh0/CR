@@ -1,0 +1,16 @@
+14:48:24 **** Incremental Build of configuration Debug for project StreamCopDemo_sw ****
+make all 
+'Building target: StreamCopDemo_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/jcoel/Desktop/CR/pratico7/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "StreamCopDemo_sw.elf"  ./src/helloworld.o ./src/helloworld_trab7.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: StreamCopDemo_sw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size StreamCopDemo_sw.elf  |tee "StreamCopDemo_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17068	   1752	  35940	  54760	   d5e8	StreamCopDemo_sw.elf
+'Finished building: StreamCopDemo_sw.elf.size'
+' '
+
+14:48:25 Build Finished (took 574ms)
+

@@ -1,0 +1,460 @@
+
+*** Running vivado
+    with args -log mb_design_PopulationCount_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_design_PopulationCount_0_0.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source mb_design_PopulationCount_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jcoel/Desktop/CR/pratico7/ip_repo/ReverseEndianessCop_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jcoel/Desktop/CR/pratico7/ip_repo/PopulationCount_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top mb_design_PopulationCount_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13360 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 839.688 ; gain = 234.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mb_design_PopulationCount_0_0' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ip/mb_design_PopulationCount_0_0/synth/mb_design_PopulationCount_0_0.vhd:75]
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'PopulationCount_v1_0' declared at 'c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0.vhd:5' bound to instance 'U0' of component 'PopulationCount_v1_0' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ip/mb_design_PopulationCount_0_0/synth/mb_design_PopulationCount_0_0.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'PopulationCount_v1_0' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0.vhd:47]
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'PopulationCount_v1_0_S00_AXIS' declared at 'c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:5' bound to instance 'PopulationCount_v1_0_S00_AXIS_inst' of component 'PopulationCount_v1_0_S00_AXIS' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'PopulationCount_v1_0_S00_AXIS' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:40]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PopulationCount_v1_0_S00_AXIS' (1#1) [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:40]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'PopulationCount_v1_0_M00_AXIS' declared at 'c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_M00_AXIS.vhd:5' bound to instance 'PopulationCount_v1_0_M00_AXIS_inst' of component 'PopulationCount_v1_0_M00_AXIS' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'PopulationCount_v1_0_M00_AXIS' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_M00_AXIS.vhd:42]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PopulationCount_v1_0_M00_AXIS' (2#1) [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_M00_AXIS.vhd:42]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'PopulationCount' declared at 'c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/src/PopulationCount.vhd:5' bound to instance 'PopulationCount_inst' of component 'PopulationCount' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'PopulationCount' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/src/PopulationCount.vhd:11]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PopulationCount' (3#1) [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/src/PopulationCount.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'PopulationCount_v1_0' (4#1) [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'mb_design_PopulationCount_0_0' (5#1) [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ip/mb_design_PopulationCount_0_0/synth/mb_design_PopulationCount_0_0.vhd:75]
+WARNING: [Synth 8-3331] design PopulationCount_v1_0_M00_AXIS has unconnected port M_AXIS_ACLK
+WARNING: [Synth 8-3331] design PopulationCount_v1_0_M00_AXIS has unconnected port M_AXIS_ARESETN
+WARNING: [Synth 8-3331] design PopulationCount_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[3]
+WARNING: [Synth 8-3331] design PopulationCount_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[2]
+WARNING: [Synth 8-3331] design PopulationCount_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[1]
+WARNING: [Synth 8-3331] design PopulationCount_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[0]
+WARNING: [Synth 8-3331] design PopulationCount_v1_0_S00_AXIS has unconnected port S_AXIS_TLAST
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 915.074 ; gain = 309.742
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 915.074 ; gain = 309.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 915.074 ; gain = 309.742
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 915.074 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1003.207 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1005.188 ; gain = 1.980
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1005.188 ; gain = 399.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1005.188 ; gain = 399.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1005.188 ; gain = 399.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1005.188 ; gain = 399.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  31 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PopulationCount_v1_0_S00_AXIS 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module PopulationCount 
+Detailed RTL Component Info : 
++---Adders : 
+	  31 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[31] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[30] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[29] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[28] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[27] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[26] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[25] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[24] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[23] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[22] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[21] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[20] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[19] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[18] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[17] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[16] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[15] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[14] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[13] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[12] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[11] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[10] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[9] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[8] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[7] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tdata[6] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tstrb[3] driven by constant 1
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tstrb[2] driven by constant 1
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tstrb[1] driven by constant 1
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tstrb[0] driven by constant 1
+INFO: [Synth 8-3917] design mb_design_PopulationCount_0_0 has port m00_axis_tlast driven by constant 0
+WARNING: [Synth 8-3331] design mb_design_PopulationCount_0_0 has unconnected port s00_axis_tstrb[3]
+WARNING: [Synth 8-3331] design mb_design_PopulationCount_0_0 has unconnected port s00_axis_tstrb[2]
+WARNING: [Synth 8-3331] design mb_design_PopulationCount_0_0 has unconnected port s00_axis_tstrb[1]
+WARNING: [Synth 8-3331] design mb_design_PopulationCount_0_0 has unconnected port s00_axis_tstrb[0]
+WARNING: [Synth 8-3331] design mb_design_PopulationCount_0_0 has unconnected port s00_axis_tlast
+WARNING: [Synth 8-3331] design mb_design_PopulationCount_0_0 has unconnected port m00_axis_aclk
+WARNING: [Synth 8-3331] design mb_design_PopulationCount_0_0 has unconnected port m00_axis_aresetn
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[31] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[31]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[31] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[31] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[30] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[30]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[30] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[30] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[29] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[29]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[29] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[29] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[28] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[28]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[28] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[28] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[27] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[27]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[27] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[27] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[26] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[26]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[26] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[26] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[25] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[25]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[25] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[25] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[24] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[24]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[24] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[24] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[23] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[23]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[23] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[23] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[22] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[22]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[22] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[22] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[21] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[21]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[21] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[21] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[20] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[20]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[20] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[20] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[19] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[19]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[19] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[19] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[18] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[18]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[18] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[18] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[17] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[17]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[17] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[17] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[16] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[16]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[16] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[16] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[15] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[15]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[15] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[15] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[14] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[14]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[14] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[14] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[13] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[13]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[13] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[13] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[12] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[12]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[12] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[12] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[11] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[11]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[11] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[11] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[10] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[10]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[10] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[10] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[9] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[9]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[9] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[9] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[8] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[8]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[8] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[8] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[7] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[7]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[7] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[7] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[6] with 1st driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[6]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin s_dataOut1_out[6] with 2nd driver pin 'GND' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net s_dataOut1_out[6] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1005.188 ; gain = 399.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1005.188 ; gain = 399.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1005.188 ; gain = 399.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1005.188 ; gain = 399.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1016.816 ; gain = 411.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1016.816 ; gain = 411.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin m00_axis_tdata[5] with 1st driver pin 'm00_axis_tdata[5]_INST_0/O' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/src/PopulationCount.vhd:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin m00_axis_tdata[5] with 2nd driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[5]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin m00_axis_tdata[4] with 1st driver pin 'm00_axis_tdata[4]_INST_0/O' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/src/PopulationCount.vhd:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin m00_axis_tdata[4] with 2nd driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[4]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin m00_axis_tdata[3] with 1st driver pin 'm00_axis_tdata[3]_INST_0/O' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/src/PopulationCount.vhd:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin m00_axis_tdata[3] with 2nd driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[3]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin m00_axis_tdata[2] with 1st driver pin 'm00_axis_tdata[2]_INST_0/O' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/src/PopulationCount.vhd:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin m00_axis_tdata[2] with 2nd driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[2]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin m00_axis_tdata[1] with 1st driver pin 'm00_axis_tdata[1]_INST_0/O' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/src/PopulationCount.vhd:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin m00_axis_tdata[1] with 2nd driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[1]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin m00_axis_tdata[0] with 1st driver pin 'm00_axis_tdata[0]_INST_0/O' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/src/PopulationCount.vhd:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin m00_axis_tdata[0] with 2nd driver pin 'U0/PopulationCount_v1_0_S00_AXIS_inst/s_dataOut_reg[0]/Q' [c:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.srcs/sources_1/bd/mb_design/ipshared/5f55/hdl/PopulationCount_v1_0_S00_AXIS.vhd:52]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        6|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1016.816 ; gain = 411.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1016.816 ; gain = 411.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1016.816 ; gain = 411.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1016.816 ; gain = 411.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     2|
+|3     |LUT3 |    18|
+|4     |LUT4 |    11|
+|5     |LUT5 |    12|
+|6     |LUT6 |    17|
+|7     |FDRE |     7|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------------------------+------------------------------+------+
+|      |Instance                               |Module                        |Cells |
++------+---------------------------------------+------------------------------+------+
+|1     |top                                    |                              |    68|
+|2     |  U0                                   |PopulationCount_v1_0          |    68|
+|3     |    PopulationCount_v1_0_S00_AXIS_inst |PopulationCount_v1_0_S00_AXIS |    68|
++------+---------------------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1016.816 ; gain = 411.484
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 90 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1016.816 ; gain = 321.371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1016.816 ; gain = 411.484
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1026.336 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1032.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+58 Infos, 15 Warnings, 90 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1032.961 ; gain = 718.551
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1032.961 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.runs/mb_design_PopulationCount_0_0_synth_1/mb_design_PopulationCount_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP mb_design_PopulationCount_0_0, cache-ID = e2280086bc287fbb
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1032.961 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.runs/mb_design_PopulationCount_0_0_synth_1/mb_design_PopulationCount_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mb_design_PopulationCount_0_0_utilization_synth.rpt -pb mb_design_PopulationCount_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 19 19:16:19 2020...

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="StreamCopDemo_sw-skip_rev_check"/>
+	<item value="bootloop" key="StreamCopDemo_sw-microblaze_0-initElf"/>
+	<item value="StreamCopDemo_sw" key="programfpga.sdxproject"/>
+	<item value="C:\Users\jcoel\Desktop\CR\pratico7\StreamCopDemo\mb_design_wrapper.bit" key="StreamCopDemo_sw-bitFile"/>
+	<item value="false" key="StreamCopDemo_sw-partial_bit"/>
+	<item value="C:\Users\jcoel\Desktop\CR\pratico7\StreamCopDemo\mb_design_wrapper.mmi" key="StreamCopDemo_sw-bmmFile"/>
+	<item value="Local" key="StreamCopDemo_sw-target"/>
+	<item value="Auto Detect" key="StreamCopDemo_sw-device"/>
+</section>
