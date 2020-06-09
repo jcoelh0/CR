@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.xpr">
+<Project Version="7" Minor="44" Path="c:/users/jcoel/desktop/cr/projetofinal/distanciaeuclidiana/distanciaeuclidiana.tmp/distanciaeuclidiana_v1_0_project/DistanciaEuclidiana_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="24cc39f356c54414a6acb267a82d32c3"/>
+    <Option Name="Id" Val="40c7d41d75bd4cc6b683c30d7594477b"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -23,7 +23,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/DistanciaEuclidiana_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.0"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -40,13 +40,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="1"/>
-    <Option Name="WTModelSimExportSim" Val="1"/>
-    <Option Name="WTQuestaExportSim" Val="1"/>
-    <Option Name="WTIesExportSim" Val="1"/>
-    <Option Name="WTVcsExportSim" Val="1"/>
-    <Option Name="WTRivieraExportSim" Val="1"/>
-    <Option Name="WTActivehdlExportSim" Val="1"/>
+    <Option Name="WTXSimExportSim" Val="0"/>
+    <Option Name="WTModelSimExportSim" Val="0"/>
+    <Option Name="WTQuestaExportSim" Val="0"/>
+    <Option Name="WTIesExportSim" Val="0"/>
+    <Option Name="WTVcsExportSim" Val="0"/>
+    <Option Name="WTRivieraExportSim" Val="0"/>
+    <Option Name="WTActivehdlExportSim" Val="0"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -62,18 +62,76 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/bd/mb_design/mb_design.bd">
+      <File Path="$PPRDIR/../../../../../../../../Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.0/hdl/DistanciaEuclidiana_v1_0_M0_AXIS.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../pratico7/Nexys4DefaultPlatform.ori/Nexys4DefaultPlatform.srcs/sources_1/bd/mb_design/mb_design.bd"/>
-          <Attr Name="ImportTime" Val="1589630050"/>
+          <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.0/hdl/DistanciaEuclidiana_v1_0_S0x_AXIS.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.0/hdl/DistanciaEuclidiana_v1_0_S0y_AXIS.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.0/hdl/DistanciaEuclidiana_v1_0_S0z_AXIS.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.0/hdl/DistanciaEuclidiana_v1_0_S1x_AXIS.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.0/hdl/DistanciaEuclidiana_v1_0_S1y_AXIS.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.0/hdl/DistanciaEuclidiana_v1_0_S1z_AXIS.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.0/hdl/DistanciaEuclidiana_v1_0.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val=""/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.0/component.xml">
+        <FileInfo SFType="IPXACT"/>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/DistanciaEuclidiana.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TopModule" Val="DistanciaEuclidiana_v1_0"/>
+        <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../../Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.0/hdl/DistanciaEuclidiana_v1_0.vhd"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -85,6 +143,7 @@
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="DistanciaEuclidiana_v1_0"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
