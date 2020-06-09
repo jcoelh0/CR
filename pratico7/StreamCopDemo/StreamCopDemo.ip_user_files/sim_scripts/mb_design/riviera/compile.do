@@ -137,10 +137,10 @@ vcom -work xil_defaultlib -93 \
 "../../../bd/mb_design/ipshared/b24f/hdl/ReverseEndianessCop_v1_0_S00_AXIS.vhd" \
 "../../../bd/mb_design/ipshared/b24f/hdl/ReverseEndianessCop_v1_0.vhd" \
 "../../../bd/mb_design/ip/mb_design_ReverseEndianessCop_0_0/sim/mb_design_ReverseEndianessCop_0_0.vhd" \
-"../../../bd/mb_design/ipshared/9a04/src/PopulationCount.vhd" \
-"../../../bd/mb_design/ipshared/9a04/hdl/PopulationCount_v1_0_M00_AXIS.vhd" \
-"../../../bd/mb_design/ipshared/9a04/hdl/PopulationCount_v1_0_S00_AXIS.vhd" \
-"../../../bd/mb_design/ipshared/9a04/hdl/PopulationCount_v1_0.vhd" \
+"../../../bd/mb_design/ipshared/ec00/src/PopulationCount.vhd" \
+"../../../bd/mb_design/ipshared/ec00/hdl/PopulationCount_v1_0_M00_AXIS.vhd" \
+"../../../bd/mb_design/ipshared/ec00/hdl/PopulationCount_v1_0_S00_AXIS.vhd" \
+"../../../bd/mb_design/ipshared/ec00/hdl/PopulationCount_v1_0.vhd" \
 "../../../bd/mb_design/ip/mb_design_PopulationCount_0_0/sim/mb_design_PopulationCount_0_0.vhd" \
 "../../../bd/mb_design/ip/mb_design_xbar_0/mb_design_xbar_0_sim_netlist.vhdl" \
 "../../../bd/mb_design/sim/mb_design.vhd" \

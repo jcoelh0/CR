@@ -73,7 +73,7 @@ set rc [catch {
   set_property webtalk.parent_dir C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.cache/wt [current_project]
   set_property parent.project_path C:/Users/jcoel/Desktop/CR/pratico7/StreamCopDemo/StreamCopDemo.xpr [current_project]
   set_property ip_repo_paths {
-  c:/Users/jcoel/Desktop/CR/pratico7/ip_repo/ReverseEndianessCop_1.0
+  C:/Users/jcoel/Desktop/CR/pratico7/ip_repo/ReverseEndianessCop_1.0
   C:/Users/jcoel/Desktop/CR/pratico7/ip_repo/PopulationCount_1.0
 } [current_project]
   update_ip_catalog

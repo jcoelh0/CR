@@ -1,6 +1,48 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon May 25 16:40:52 2020
+| Host         : DESKTOP-T839HQ8 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_design_PopulationCount_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_design_PopulationCount_0_0 (xilinx.com:user:PopulationCount:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon May 25 15:59:04 2020
+| Host         : DESKTOP-T839HQ8 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_design_PopulationCount_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_design_PopulationCount_0_0 (xilinx.com:user:PopulationCount:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 | Date         : Sat May 16 14:43:01 2020
 | Host         : DESKTOP-T839HQ8 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
