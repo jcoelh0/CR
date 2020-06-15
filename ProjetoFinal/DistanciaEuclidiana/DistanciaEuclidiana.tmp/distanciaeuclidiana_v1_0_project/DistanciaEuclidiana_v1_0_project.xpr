@@ -6,7 +6,7 @@
 <Project Version="7" Minor="44" Path="c:/users/jcoel/desktop/cr/projetofinal/distanciaeuclidiana/distanciaeuclidiana.tmp/distanciaeuclidiana_v1_0_project/DistanciaEuclidiana_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="40c7d41d75bd4cc6b683c30d7594477b"/>
+    <Option Name="Id" Val="12918c01abaa411ebd815d8e52ab8bb4"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -120,13 +120,6 @@
       </File>
       <File Path="$PPRDIR/../../../../../../../../Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.0/component.xml">
         <FileInfo SFType="IPXACT"/>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/DistanciaEuclidiana.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
