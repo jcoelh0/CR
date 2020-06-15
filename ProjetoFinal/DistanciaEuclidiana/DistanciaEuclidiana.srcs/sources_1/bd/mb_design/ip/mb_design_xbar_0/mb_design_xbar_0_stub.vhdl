@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Mon Jun 15 12:05:52 2020
+-- Date        : Mon Jun 15 21:15:35 2020
 -- Host        : DESKTOP-T839HQ8 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               C:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ip/mb_design_xbar_0/mb_design_xbar_0_stub.vhdl

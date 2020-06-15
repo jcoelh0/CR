@@ -50,7 +50,7 @@ begin
     z2 <= to_integer(unsigned(Sz1));
     
     
-    distance <= sqrt( (x2-x1)**2 + (y2-y1)**2 + (z2-z1)**2 );
+    distance <= (x2-x1)**2.0 + (y2-y1)**2.0 + (z2-z1)**2.0;
     
     --result <= ;
 

@@ -1,0 +1,464 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jun 15 21:14:14 2020
+# Process ID: 1580
+# Current directory: C:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.runs/mb_design_DistanciaEuclidiana_0_0_synth_1
+# Command line: vivado.exe -log mb_design_DistanciaEuclidiana_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_design_DistanciaEuclidiana_0_0.tcl
+# Log file: C:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.runs/mb_design_DistanciaEuclidiana_0_0_synth_1/mb_design_DistanciaEuclidiana_0_0.vds
+# Journal file: C:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.runs/mb_design_DistanciaEuclidiana_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mb_design_DistanciaEuclidiana_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.cache/ip 
+Command: synth_design -top mb_design_DistanciaEuclidiana_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3316 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 840.090 ; gain = 234.270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mb_design_DistanciaEuclidiana_0_0' [c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ip/mb_design_DistanciaEuclidiana_0_0/synth/mb_design_DistanciaEuclidiana_0_0.vhd:106]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_M00_AXI_START_DATA_VALUE bound to: 32'b10101010000000000000000000000000 
+	Parameter C_M00_AXI_TARGET_SLAVE_BASE_ADDR bound to: 32'b01000000000000000000000000000000 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_TRANSACTIONS_NUM bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DistanciaEuclidiana_v1_1' declared at 'c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ipshared/5104/hdl/DistanciaEuclidiana_v1_1.vhd:5' bound to instance 'U0' of component 'DistanciaEuclidiana_v1_1' [c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ip/mb_design_DistanciaEuclidiana_0_0/synth/mb_design_DistanciaEuclidiana_0_0.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'DistanciaEuclidiana_v1_1' [c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ipshared/5104/hdl/DistanciaEuclidiana_v1_1.vhd:82]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_M00_AXI_START_DATA_VALUE bound to: -1442840576 - type: integer 
+	Parameter C_M00_AXI_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_TRANSACTIONS_NUM bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'DistanciaEuclidiana_v1_1_S00_AXI' declared at 'c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ipshared/5104/hdl/DistanciaEuclidiana_v1_1_S00_AXI.vhd:5' bound to instance 'DistanciaEuclidiana_v1_1_S00_AXI_inst' of component 'DistanciaEuclidiana_v1_1_S00_AXI' [c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ipshared/5104/hdl/DistanciaEuclidiana_v1_1.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'DistanciaEuclidiana_v1_1_S00_AXI' [c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ipshared/5104/hdl/DistanciaEuclidiana_v1_1_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ipshared/5104/hdl/DistanciaEuclidiana_v1_1_S00_AXI.vhd:226]
+INFO: [Synth 8-256] done synthesizing module 'DistanciaEuclidiana_v1_1_S00_AXI' (1#1) [c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ipshared/5104/hdl/DistanciaEuclidiana_v1_1_S00_AXI.vhd:86]
+	Parameter C_M_START_DATA_VALUE bound to: -1442840576 - type: integer 
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_TRANSACTIONS_NUM bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DistanciaEuclidiana_v1_1_M00_AXI' declared at 'c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ipshared/5104/hdl/DistanciaEuclidiana_v1_1_M00_AXI.vhd:5' bound to instance 'DistanciaEuclidiana_v1_1_M00_AXI_inst' of component 'DistanciaEuclidiana_v1_1_M00_AXI' [c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ipshared/5104/hdl/DistanciaEuclidiana_v1_1.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'DistanciaEuclidiana_v1_1_M00_AXI' [c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ipshared/5104/hdl/DistanciaEuclidiana_v1_1_M00_AXI.vhd:96]
+	Parameter C_M_START_DATA_VALUE bound to: -1442840576 - type: integer 
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_TRANSACTIONS_NUM bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ipshared/5104/hdl/DistanciaEuclidiana_v1_1_M00_AXI.vhd:519]
+INFO: [Synth 8-256] done synthesizing module 'DistanciaEuclidiana_v1_1_M00_AXI' (2#1) [c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ipshared/5104/hdl/DistanciaEuclidiana_v1_1_M00_AXI.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'DistanciaEuclidiana_v1_1' (3#1) [c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ipshared/5104/hdl/DistanciaEuclidiana_v1_1.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'mb_design_DistanciaEuclidiana_0_0' (4#1) [c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ip/mb_design_DistanciaEuclidiana_0_0/synth/mb_design_DistanciaEuclidiana_0_0.vhd:106]
+WARNING: [Synth 8-3331] design DistanciaEuclidiana_v1_1_M00_AXI has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design DistanciaEuclidiana_v1_1_M00_AXI has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design DistanciaEuclidiana_v1_1_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design DistanciaEuclidiana_v1_1_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design DistanciaEuclidiana_v1_1_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design DistanciaEuclidiana_v1_1_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design DistanciaEuclidiana_v1_1_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design DistanciaEuclidiana_v1_1_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 916.051 ; gain = 310.230
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 916.051 ; gain = 310.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 916.051 ; gain = 310.230
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 916.051 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 992.988 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.163 . Memory (MB): peak = 995.055 ; gain = 2.066
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 995.055 ; gain = 389.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 995.055 ; gain = 389.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 995.055 ; gain = 389.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'DistanciaEuclidiana_v1_1_M00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+              init_write |                               01 |                               01
+               init_read |                               10 |                               10
+            init_compare |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'DistanciaEuclidiana_v1_1_M00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 995.055 ; gain = 389.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   7 Input     32 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DistanciaEuclidiana_v1_1_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 7     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   7 Input     32 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 5     
+Module DistanciaEuclidiana_v1_1_M00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3917] design mb_design_DistanciaEuclidiana_0_0 has port m00_axi_awprot[2] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_DistanciaEuclidiana_0_0 has port m00_axi_awprot[1] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_DistanciaEuclidiana_0_0 has port m00_axi_awprot[0] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_DistanciaEuclidiana_0_0 has port m00_axi_wstrb[3] driven by constant 1
+INFO: [Synth 8-3917] design mb_design_DistanciaEuclidiana_0_0 has port m00_axi_wstrb[2] driven by constant 1
+INFO: [Synth 8-3917] design mb_design_DistanciaEuclidiana_0_0 has port m00_axi_wstrb[1] driven by constant 1
+INFO: [Synth 8-3917] design mb_design_DistanciaEuclidiana_0_0 has port m00_axi_wstrb[0] driven by constant 1
+INFO: [Synth 8-3917] design mb_design_DistanciaEuclidiana_0_0 has port m00_axi_arprot[2] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_DistanciaEuclidiana_0_0 has port m00_axi_arprot[1] driven by constant 0
+INFO: [Synth 8-3917] design mb_design_DistanciaEuclidiana_0_0 has port m00_axi_arprot[0] driven by constant 1
+WARNING: [Synth 8-3331] design mb_design_DistanciaEuclidiana_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design mb_design_DistanciaEuclidiana_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design mb_design_DistanciaEuclidiana_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design mb_design_DistanciaEuclidiana_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design mb_design_DistanciaEuclidiana_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design mb_design_DistanciaEuclidiana_0_0 has unconnected port s00_axi_arprot[0]
+WARNING: [Synth 8-3331] design mb_design_DistanciaEuclidiana_0_0 has unconnected port m00_axi_bresp[0]
+WARNING: [Synth 8-3331] design mb_design_DistanciaEuclidiana_0_0 has unconnected port m00_axi_rresp[0]
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[3]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[4]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[5]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[6]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[7]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[8]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[9]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[10]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[11]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[12]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[13]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[14]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[15]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[16]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[17]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[18]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[19]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[20]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[21]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[22]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[23]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[24]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[25]' (FDSE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[26]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[27]' (FDSE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[28]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[29]' (FDSE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/expected_rdata_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_araddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_araddr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[3]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[4]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[5]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[6]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[7]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[8]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[9]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[10]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[11]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[12]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[13]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[14]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[15]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[16]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[17]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[18]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[19]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[20]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[21]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[22]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[23]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[24]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[25]' (FDSE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[26]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[27]' (FDSE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[28]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[29]' (FDSE) to 'U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_wdata_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_14/\U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_awaddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_14/\U0/DistanciaEuclidiana_v1_1_M00_AXI_inst/axi_awaddr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/DistanciaEuclidiana_v1_1_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/DistanciaEuclidiana_v1_1_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/DistanciaEuclidiana_v1_1_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/DistanciaEuclidiana_v1_1_S00_AXI_inst/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 995.055 ; gain = 389.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 995.055 ; gain = 389.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 995.055 ; gain = 389.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1001.805 ; gain = 395.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1017.504 ; gain = 411.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1017.504 ; gain = 411.684
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1017.504 ; gain = 411.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1017.504 ; gain = 411.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1017.504 ; gain = 411.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1017.504 ; gain = 411.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    21|
+|2     |LUT1   |     6|
+|3     |LUT2   |     9|
+|4     |LUT3   |    17|
+|5     |LUT4   |    18|
+|6     |LUT5   |    29|
+|7     |LUT6   |    78|
+|8     |FDRE   |   325|
+|9     |FDSE   |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------------------------+---------------------------------+------+
+|      |Instance                                  |Module                           |Cells |
++------+------------------------------------------+---------------------------------+------+
+|1     |top                                       |                                 |   507|
+|2     |  U0                                      |DistanciaEuclidiana_v1_1         |   507|
+|3     |    DistanciaEuclidiana_v1_1_M00_AXI_inst |DistanciaEuclidiana_v1_1_M00_AXI |   168|
+|4     |    DistanciaEuclidiana_v1_1_S00_AXI_inst |DistanciaEuclidiana_v1_1_S00_AXI |   339|
++------+------------------------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1017.504 ; gain = 411.684
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 1017.504 ; gain = 332.680
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1017.504 ; gain = 411.684
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1029.566 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1032.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+105 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1032.711 ; gain = 718.828
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1032.711 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.runs/mb_design_DistanciaEuclidiana_0_0_synth_1/mb_design_DistanciaEuclidiana_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP mb_design_DistanciaEuclidiana_0_0, cache-ID = 447685704af6a6ac
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1032.711 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.runs/mb_design_DistanciaEuclidiana_0_0_synth_1/mb_design_DistanciaEuclidiana_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mb_design_DistanciaEuclidiana_0_0_utilization_synth.rpt -pb mb_design_DistanciaEuclidiana_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 15 21:15:17 2020...

@@ -41,7 +41,8 @@
       "axi_gpio_display": "",
       "axi_uartlite_0": "",
       "axi_timer_0": "",
-      "fit_timer_0": ""
+      "fit_timer_0": "",
+      "DistanciaEuclidiana_0": ""
     },
     "interface_ports": {
       "push_buttons_5bits": {
@@ -1064,6 +1065,54 @@
           }
         },
         "interface_nets": {
+          "m07_couplers_to_microblaze_0_axi_periph": {
+            "interface_ports": [
+              "M07_AXI",
+              "m07_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m07_couplers": {
+            "interface_ports": [
+              "xbar/M07_AXI",
+              "m07_couplers/S_AXI"
+            ]
+          },
+          "m04_couplers_to_microblaze_0_axi_periph": {
+            "interface_ports": [
+              "M04_AXI",
+              "m04_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m04_couplers": {
+            "interface_ports": [
+              "xbar/M04_AXI",
+              "m04_couplers/S_AXI"
+            ]
+          },
+          "m05_couplers_to_microblaze_0_axi_periph": {
+            "interface_ports": [
+              "M05_AXI",
+              "m05_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m05_couplers": {
+            "interface_ports": [
+              "xbar/M05_AXI",
+              "m05_couplers/S_AXI"
+            ]
+          },
+          "m06_couplers_to_microblaze_0_axi_periph": {
+            "interface_ports": [
+              "M06_AXI",
+              "m06_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m06_couplers": {
+            "interface_ports": [
+              "xbar/M06_AXI",
+              "m06_couplers/S_AXI"
+            ]
+          },
           "microblaze_0_axi_periph_to_s00_couplers": {
             "interface_ports": [
               "S00_AXI",
@@ -1134,54 +1183,6 @@
             "interface_ports": [
               "xbar/M03_AXI",
               "m03_couplers/S_AXI"
-            ]
-          },
-          "m04_couplers_to_microblaze_0_axi_periph": {
-            "interface_ports": [
-              "M04_AXI",
-              "m04_couplers/M_AXI"
-            ]
-          },
-          "m05_couplers_to_microblaze_0_axi_periph": {
-            "interface_ports": [
-              "M05_AXI",
-              "m05_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m04_couplers": {
-            "interface_ports": [
-              "xbar/M04_AXI",
-              "m04_couplers/S_AXI"
-            ]
-          },
-          "xbar_to_m05_couplers": {
-            "interface_ports": [
-              "xbar/M05_AXI",
-              "m05_couplers/S_AXI"
-            ]
-          },
-          "m06_couplers_to_microblaze_0_axi_periph": {
-            "interface_ports": [
-              "M06_AXI",
-              "m06_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m06_couplers": {
-            "interface_ports": [
-              "xbar/M06_AXI",
-              "m06_couplers/S_AXI"
-            ]
-          },
-          "m07_couplers_to_microblaze_0_axi_periph": {
-            "interface_ports": [
-              "M07_AXI",
-              "m07_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m07_couplers": {
-            "interface_ports": [
-              "xbar/M07_AXI",
-              "m07_couplers/S_AXI"
             ]
           }
         },
@@ -1379,6 +1380,10 @@
             "value": "100000"
           }
         }
+      },
+      "DistanciaEuclidiana_0": {
+        "vlnv": "xilinx.com:user:DistanciaEuclidiana:1.1",
+        "xci_name": "mb_design_DistanciaEuclidiana_0_0"
       }
     },
     "interface_nets": {
@@ -1489,6 +1494,18 @@
           "microblaze_0_axi_periph/M06_AXI",
           "axi_uartlite_0/S_AXI"
         ]
+      },
+      "DistanciaEuclidiana_0_M00_AXI": {
+        "interface_ports": [
+          "DistanciaEuclidiana_0/M00_AXI",
+          "microblaze_0_axi_periph/S01_AXI"
+        ]
+      },
+      "microblaze_0_axi_periph_M07_AXI": {
+        "interface_ports": [
+          "microblaze_0_axi_periph/M07_AXI",
+          "DistanciaEuclidiana_0/S00_AXI"
+        ]
       }
     },
     "nets": {
@@ -1523,7 +1540,9 @@
           "microblaze_0_axi_periph/M06_ACLK",
           "fit_timer_0/Clk",
           "microblaze_0_axi_periph/S01_ACLK",
-          "microblaze_0_axi_periph/M07_ACLK"
+          "microblaze_0_axi_periph/M07_ACLK",
+          "DistanciaEuclidiana_0/s00_axi_aclk",
+          "DistanciaEuclidiana_0/m00_axi_aclk"
         ]
       },
       "clk_wiz_1_locked": {
@@ -1565,7 +1584,9 @@
           "axi_uartlite_0/s_axi_aresetn",
           "microblaze_0_axi_periph/M06_ARESETN",
           "microblaze_0_axi_periph/S01_ARESETN",
-          "microblaze_0_axi_periph/M07_ARESETN"
+          "microblaze_0_axi_periph/M07_ARESETN",
+          "DistanciaEuclidiana_0/s00_axi_aresetn",
+          "DistanciaEuclidiana_0/m00_axi_aresetn"
         ]
       },
       "mdm_1_debug_sys_rst": {
@@ -1631,6 +1652,11 @@
             "range": "4G",
             "width": "32",
             "segments": {
+              "SEG_DistanciaEuclidiana_0_S00_AXI_reg": {
+                "address_block": "/DistanciaEuclidiana_0/S00_AXI/S00_AXI_reg",
+                "offset": "0x44A00000",
+                "range": "64K"
+              },
               "SEG_axi_gpio_buttons_Reg": {
                 "address_block": "/axi_gpio_buttons/S_AXI/Reg",
                 "offset": "0x40000000",
@@ -1680,6 +1706,56 @@
               "SEG_ilmb_bram_if_cntlr_Mem": {
                 "address_block": "/microblaze_0_local_memory/ilmb_bram_if_cntlr/SLMB/Mem",
                 "offset": "0x00000000",
+                "range": "64K"
+              }
+            }
+          }
+        }
+      },
+      "/DistanciaEuclidiana_0": {
+        "address_spaces": {
+          "M00_AXI": {
+            "range": "4G",
+            "width": "32",
+            "segments": {
+              "SEG_DistanciaEuclidiana_0_S00_AXI_reg": {
+                "address_block": "/DistanciaEuclidiana_0/S00_AXI/S00_AXI_reg",
+                "offset": "0x44A00000",
+                "range": "64K"
+              },
+              "SEG_axi_gpio_buttons_Reg": {
+                "address_block": "/axi_gpio_buttons/S_AXI/Reg",
+                "offset": "0x40000000",
+                "range": "64K"
+              },
+              "SEG_axi_gpio_display_Reg": {
+                "address_block": "/axi_gpio_display/S_AXI/Reg",
+                "offset": "0x40010000",
+                "range": "64K"
+              },
+              "SEG_axi_gpio_leds_Reg": {
+                "address_block": "/axi_gpio_leds/S_AXI/Reg",
+                "offset": "0x40020000",
+                "range": "64K"
+              },
+              "SEG_axi_gpio_switches_Reg": {
+                "address_block": "/axi_gpio_switches/S_AXI/Reg",
+                "offset": "0x40030000",
+                "range": "64K"
+              },
+              "SEG_axi_timer_0_Reg": {
+                "address_block": "/axi_timer_0/S_AXI/Reg",
+                "offset": "0x41C00000",
+                "range": "64K"
+              },
+              "SEG_axi_uartlite_0_Reg": {
+                "address_block": "/axi_uartlite_0/S_AXI/Reg",
+                "offset": "0x40600000",
+                "range": "64K"
+              },
+              "SEG_microblaze_0_axi_intc_Reg": {
+                "address_block": "/microblaze_0_axi_intc/S_AXI/Reg",
+                "offset": "0x41200000",
                 "range": "64K"
               }
             }
