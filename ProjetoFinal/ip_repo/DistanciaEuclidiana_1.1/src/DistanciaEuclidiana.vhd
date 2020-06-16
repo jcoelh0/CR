@@ -23,7 +23,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.math_real.all;
 use IEEE.numeric_std.all;
-
+use IEEE.numeric_std.signed;
 
 entity DistanciaEuclidiana is
     Port ( Sx0 : in STD_LOGIC_VECTOR (32 downto 0);
@@ -37,10 +37,12 @@ end DistanciaEuclidiana;
 
 architecture Behavioral of DistanciaEuclidiana is
     signal distance : real;
-    signal sqrtdist : real;
+    signal sqrtdist : unsigned(31 downto 0);
     signal x1,x2 : integer;
     signal y1,y2 : integer;
     signal z1,z2 : integer;
+    
+    signal f : float64;
     
 
     function  sqrt  ( d : UNSIGNED ) return UNSIGNED is
@@ -48,7 +50,8 @@ architecture Behavioral of DistanciaEuclidiana is
     variable q : unsigned(15 downto 0):=(others => '0');  --result.
     variable left,right,r : unsigned(17 downto 0):=(others => '0');  --input to adder/sub.r-remainder.
     variable i : integer:=0;
-
+    variable final : unsigned(31 downto 0);
+    
     begin
         for i in 0 to 15 loop
             right(0):='1';
@@ -65,7 +68,8 @@ architecture Behavioral of DistanciaEuclidiana is
         q(15 downto 1) := q(14 downto 0);
         q(0) := not r(17);
         end loop;
-    return q;
+        final := q(15 downto 0) & r(15 downto 0);
+    return final;
     end sqrt;
     
 begin
@@ -79,8 +83,12 @@ begin
     
     
     distance <= (x2-x1)**2.0 + (y2-y1)**2.0 + (z2-z1)**2.0;
-    sqrtdist <= sqrt(distance);
     
-    --result <= ;
+    
+    
+    sqrtdist <= sqrt(conv_signed(integer(distance),16));
+    
+    
+    result <= std_logic_vector(sqrtdist);
 
 end Behavioral;

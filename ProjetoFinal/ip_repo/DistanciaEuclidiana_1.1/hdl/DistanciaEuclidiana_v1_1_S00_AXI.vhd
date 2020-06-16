@@ -84,7 +84,9 @@ entity DistanciaEuclidiana_v1_1_S00_AXI is
 end DistanciaEuclidiana_v1_1_S00_AXI;
 
 architecture arch_imp of DistanciaEuclidiana_v1_1_S00_AXI is
-
+    
+    
+    
 	-- AXI4LITE signals
 	signal axi_awaddr	: std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
 	signal axi_awready	: std_logic;
@@ -411,7 +413,7 @@ begin
 
 
 	-- Add user logic here
-
+    
 	-- User logic ends
-
+	
 end arch_imp;

@@ -23,7 +23,7 @@ entity DistanciaEuclidiana_v1_1 is
 	);
 	port (
 		-- Users to add ports here
-
+		
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -80,7 +80,17 @@ entity DistanciaEuclidiana_v1_1 is
 end DistanciaEuclidiana_v1_1;
 
 architecture arch_imp of DistanciaEuclidiana_v1_1 is
-
+    
+    component DistanciaEuclidiana is
+    port(  Sx0 : in STD_LOGIC_VECTOR (32 downto 0);
+           Sy0 : in STD_LOGIC_VECTOR (32 downto 0);
+           Sz0 : in STD_LOGIC_VECTOR (32 downto 0);
+           Sx1 : in STD_LOGIC_VECTOR (32 downto 0);
+           Sy1 : in STD_LOGIC_VECTOR (32 downto 0);
+           Sz1 : in STD_LOGIC_VECTOR (32 downto 0);
+           result : out STD_LOGIC_VECTOR (32 downto 0));
+    end component DistanciaEuclidiana;
+    
 	-- component declaration
 	component DistanciaEuclidiana_v1_1_S00_AXI is
 		generic (
@@ -217,7 +227,14 @@ DistanciaEuclidiana_v1_1_M00_AXI_inst : DistanciaEuclidiana_v1_1_M00_AXI
 	);
 
 	-- Add user logic here
-
+    distancia_euclidiana : DistanciaEuclidiana
+	   port map(Sx0    => ,
+	            Sy0    => ,
+                Sz0    => ,
+                Sx1    => ,
+                Sy1    => ,
+                Sz1    => ,
+                result => slv_reg1(11 downto 8));
 	-- User logic ends
 
 end arch_imp;
