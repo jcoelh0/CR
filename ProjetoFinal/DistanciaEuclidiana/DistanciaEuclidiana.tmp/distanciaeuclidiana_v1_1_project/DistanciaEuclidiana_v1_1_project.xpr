@@ -6,7 +6,7 @@
 <Project Version="7" Minor="44" Path="c:/users/jcoel/desktop/cr/projetofinal/distanciaeuclidiana/distanciaeuclidiana.tmp/distanciaeuclidiana_v1_1_project/DistanciaEuclidiana_v1_1_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="7dc1c2052b38462fa0aebb87d75f1ccc"/>
+    <Option Name="Id" Val="ab561386c34444959fe5690a8a9ae306"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -65,6 +65,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PPRDIR/../../../../../../../../Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1/src/DistanciaEuclidiana.vhd">
         <FileInfo>
+          <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

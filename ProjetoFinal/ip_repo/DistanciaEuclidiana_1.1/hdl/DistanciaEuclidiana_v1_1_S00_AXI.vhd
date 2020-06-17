@@ -16,7 +16,7 @@ entity DistanciaEuclidiana_v1_1_S00_AXI is
 	);
 	port (
 		-- Users to add ports here
-
+        distance : inout std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -85,7 +85,15 @@ end DistanciaEuclidiana_v1_1_S00_AXI;
 
 architecture arch_imp of DistanciaEuclidiana_v1_1_S00_AXI is
     
-    
+    component DistanciaEuclidiana is
+    port(  Sx0 : in STD_LOGIC_VECTOR (32 downto 0);
+           Sy0 : in STD_LOGIC_VECTOR (32 downto 0);
+           Sz0 : in STD_LOGIC_VECTOR (32 downto 0);
+           Sx1 : in STD_LOGIC_VECTOR (32 downto 0);
+           Sy1 : in STD_LOGIC_VECTOR (32 downto 0);
+           Sz1 : in STD_LOGIC_VECTOR (32 downto 0);
+           result : out STD_LOGIC_VECTOR (32 downto 0));
+    end component DistanciaEuclidiana;
     
 	-- AXI4LITE signals
 	signal axi_awaddr	: std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
@@ -377,7 +385,7 @@ begin
 	    loc_addr := axi_araddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
 	    case loc_addr is
 	      when b"000" =>
-	        reg_data_out <= slv_reg0;
+	        reg_data_out <= distance;
 	      when b"001" =>
 	        reg_data_out <= slv_reg1;
 	      when b"010" =>
@@ -413,7 +421,14 @@ begin
 
 
 	-- Add user logic here
-    
+    distancia_euclidiana : DistanciaEuclidiana
+	   port map(Sx0    => slv_reg0,
+	            Sy0    => slv_reg1,
+                Sz0    => slv_reg2,
+                Sx1    => slv_reg3,
+                Sy1    => slv_reg4,
+                Sz1    => slv_reg5,
+                result => distance);
 	-- User logic ends
 	
 end arch_imp;

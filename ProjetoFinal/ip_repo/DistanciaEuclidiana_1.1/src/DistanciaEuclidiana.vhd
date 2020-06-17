@@ -42,7 +42,6 @@ architecture Behavioral of DistanciaEuclidiana is
     signal y1,y2 : integer;
     signal z1,z2 : integer;
     
-    signal f : float64;
     
 
     function  sqrt  ( d : UNSIGNED ) return UNSIGNED is
