@@ -36,11 +36,12 @@ entity DistanciaEuclidiana is
 end DistanciaEuclidiana;
 
 architecture Behavioral of DistanciaEuclidiana is
-    signal distance : real;
+    signal distance : integer;
     signal sqrtdist : unsigned(31 downto 0);
     signal x1,x2 : integer;
     signal y1,y2 : integer;
     signal z1,z2 : integer;
+    signal x,y,z : integer;
     
     
 
@@ -80,13 +81,13 @@ begin
     z1 <= to_integer(unsigned(Sz0));
     z2 <= to_integer(unsigned(Sz1));
     
+    x <= x2-x1;
+    y <= y2-y1;
+    z <= z2-z1;
     
-    distance <= (x2-x1)**2.0 + (y2-y1)**2.0 + (z2-z1)**2.0;
+    distance <= (x*x) + (y*y) + (z*z);    
     
-    
-    
-    sqrtdist <= sqrt(conv_signed(integer(distance),16));
-    
+    sqrtdist <= sqrt(to_unsigned(distance,32));
     
     result <= std_logic_vector(sqrtdist);
 

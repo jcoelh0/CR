@@ -134,9 +134,9 @@ vcom -work fit_timer_v2_0_10 -64 -93 \
 
 vcom -work xil_defaultlib -64 -93 \
 "../../../bd/mb_design/ip/mb_design_fit_timer_0_0/sim/mb_design_fit_timer_0_0.vhd" \
-"../../../bd/mb_design/ipshared/c566/src/DistanciaEuclidiana.vhd" \
-"../../../bd/mb_design/ipshared/c566/hdl/DistanciaEuclidiana_v1_1_S00_AXI.vhd" \
-"../../../bd/mb_design/ipshared/c566/hdl/DistanciaEuclidiana_v1_1.vhd" \
+"../../../bd/mb_design/ipshared/8857/src/DistanciaEuclidiana.vhd" \
+"../../../bd/mb_design/ipshared/8857/hdl/DistanciaEuclidiana_v1_1_S00_AXI.vhd" \
+"../../../bd/mb_design/ipshared/8857/hdl/DistanciaEuclidiana_v1_1.vhd" \
 "../../../bd/mb_design/ip/mb_design_DistanciaEuclidiana_0_1/sim/mb_design_DistanciaEuclidiana_0_1.vhd" \
 "../../../bd/mb_design/sim/mb_design.vhd" \
 

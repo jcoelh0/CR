@@ -266,7 +266,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>7fc9c66b</spirit:value>
+            <spirit:value>023a7717</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -282,7 +282,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>7fc9c66b</spirit:value>
+            <spirit:value>023a7717</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -900,8 +900,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>DistanciaEuclidiana_v1.1</xilinx:displayName>
-      <xilinx:coreRevision>6</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2020-06-17T14:37:57Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>9</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-06-19T10:07:32Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@a69258d_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1a649c16_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
@@ -1036,13 +1036,46 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3ea84e8e_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@48c8a4e8_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1c793296_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69fd2d13_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f2f3ab7_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37e16fa7_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2df4210d_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@447cd098_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27053234_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ffa3493_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4898e23f_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59f1bb4b_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1aec8fa4_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48d111d3_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8bc89a6_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@643ac672_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38be4d39_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d817c3_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33fc9435_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7db695ba_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bdb295a_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@312d288a_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@447ece4e_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28d0df9c_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d429991_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@442d3395_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56028768_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d7aefa0_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c05069d_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42f2f08d_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dc3c7af_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48e27f8_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dc12fa1_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44722f80_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23ddf424_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f033df9_ARCHIVE_LOCATION">c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="616027be"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6d5270c8"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3e63d005"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ebaa73e5"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="89abdaab"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="c81c2f16"/>

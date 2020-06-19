@@ -1,6 +1,69 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Jun 19 11:07:40 2020
+| Host         : DESKTOP-T839HQ8 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_design_DistanciaEuclidiana_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_design_DistanciaEuclidiana_0_1 (xilinx.com:user:DistanciaEuclidiana:1.1) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Jun 19 11:04:16 2020
+| Host         : DESKTOP-T839HQ8 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_design_DistanciaEuclidiana_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_design_DistanciaEuclidiana_0_1 (xilinx.com:user:DistanciaEuclidiana:1.1) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Jun 17 16:19:55 2020
+| Host         : DESKTOP-T839HQ8 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_design_DistanciaEuclidiana_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_design_DistanciaEuclidiana_0_1 (xilinx.com:user:DistanciaEuclidiana:1.1) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 | Date         : Wed Jun 17 15:38:21 2020
 | Host         : DESKTOP-T839HQ8 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

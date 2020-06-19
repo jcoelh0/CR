@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:DistanciaEuclidiana:1.1
--- IP Revision: 6
+-- IP Revision: 9
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -125,7 +125,7 @@ ARCHITECTURE mb_design_DistanciaEuclidiana_0_1_arch OF mb_design_DistanciaEuclid
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF mb_design_DistanciaEuclidiana_0_1_arch : ARCHITECTURE IS "mb_design_DistanciaEuclidiana_0_1,DistanciaEuclidiana_v1_1,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF mb_design_DistanciaEuclidiana_0_1_arch: ARCHITECTURE IS "mb_design_DistanciaEuclidiana_0_1,DistanciaEuclidiana_v1_1,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=DistanciaEuclidiana,x_ipVersion=1.1,x_ipCoreRevision=6,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=5,C_M00_AXI_START_DATA_VALUE=0xAA000000,C_M00_AXI_TARGET_SLAVE_BASE_ADDR=0x40000000,C_M00_AXI_ADDR_WIDTH=32,C_M00_AXI_DATA_WIDTH=32,C_M00_AXI_TRANSACTIONS_NUM=4}";
+  ATTRIBUTE CORE_GENERATION_INFO OF mb_design_DistanciaEuclidiana_0_1_arch: ARCHITECTURE IS "mb_design_DistanciaEuclidiana_0_1,DistanciaEuclidiana_v1_1,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=DistanciaEuclidiana,x_ipVersion=1.1,x_ipCoreRevision=9,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=5,C_M00_AXI_START_DATA_VALUE=0xAA000000,C_M00_AXI_TARGET_SLAVE_BASE_ADDR=0x40000000,C_M00_AXI_ADDR_WIDTH=32,C_M00_AXI_DATA_WIDTH=32,C_M00_AXI_TRANSACTIONS_NUM=4}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF s00_axi_rready: SIGNAL IS "xilinx.com:interface:aximm:1.0 S00_AXI RREADY";

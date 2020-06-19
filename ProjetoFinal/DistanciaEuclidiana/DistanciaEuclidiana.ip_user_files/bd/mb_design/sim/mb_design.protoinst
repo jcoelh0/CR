@@ -443,32 +443,6 @@
 						"WVALID": { "actual": "S00_AXI_wvalid[0:0]"}
 					}
 				},
-				"/microblaze_0_axi_periph/S01_AXI": {
-					"interface": "xilinx.com:interface:aximm:1.0",
-					"ports": {
-						"ACLK": { "actual": "S01_ACLK"},
-						"ARADDR": { "actual": "S01_AXI_araddr[63:32]"},
-						"ARESETN": { "actual": "ARESETN"},
-						"ARPROT": { "actual": "S01_AXI_arprot[5:3]"},
-						"ARREADY": { "actual": "S01_AXI_arready"},
-						"ARVALID": { "actual": "S01_AXI_arvalid"},
-						"AWADDR": { "actual": "S01_AXI_awaddr[63:32]"},
-						"AWPROT": { "actual": "S01_AXI_awprot[5:3]"},
-						"AWREADY": { "actual": "S01_AXI_awready"},
-						"AWVALID": { "actual": "S01_AXI_awvalid"},
-						"BREADY": { "actual": "S01_AXI_bready"},
-						"BRESP": { "actual": "S01_AXI_bresp[3:2]"},
-						"BVALID": { "actual": "S01_AXI_bvalid"},
-						"RDATA": { "actual": "S01_AXI_rdata[63:32]"},
-						"RREADY": { "actual": "S01_AXI_rready"},
-						"RRESP": { "actual": "S01_AXI_rresp[3:2]"},
-						"RVALID": { "actual": "S01_AXI_rvalid"},
-						"WDATA": { "actual": "S01_AXI_wdata[63:32]"},
-						"WREADY": { "actual": "S01_AXI_wready"},
-						"WSTRB": { "actual": "S01_AXI_wstrb[7:4]"},
-						"WVALID": { "actual": "S01_AXI_wvalid"}
-					}
-				},
 				"/microblaze_0_axi_periph/m00_couplers/M_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {

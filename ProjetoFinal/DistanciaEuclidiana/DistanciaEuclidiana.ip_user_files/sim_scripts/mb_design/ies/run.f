@@ -93,9 +93,9 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/mb_design/ip/mb_design_fit_timer_0_0/sim/mb_design_fit_timer_0_0.vhd" \
-  "../../../bd/mb_design/ipshared/c566/src/DistanciaEuclidiana.vhd" \
-  "../../../bd/mb_design/ipshared/c566/hdl/DistanciaEuclidiana_v1_1_S00_AXI.vhd" \
-  "../../../bd/mb_design/ipshared/c566/hdl/DistanciaEuclidiana_v1_1.vhd" \
+  "../../../bd/mb_design/ipshared/8857/src/DistanciaEuclidiana.vhd" \
+  "../../../bd/mb_design/ipshared/8857/hdl/DistanciaEuclidiana_v1_1_S00_AXI.vhd" \
+  "../../../bd/mb_design/ipshared/8857/hdl/DistanciaEuclidiana_v1_1.vhd" \
   "../../../bd/mb_design/ip/mb_design_DistanciaEuclidiana_0_1/sim/mb_design_DistanciaEuclidiana_0_1.vhd" \
   "../../../bd/mb_design/sim/mb_design.vhd" \
 -endlib

@@ -64,4 +64,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mb_design_axi_t
 # IP: bd/mb_design/ip/mb_design_fit_timer_0_0/mb_design_fit_timer_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mb_design_fit_timer_0_0 || ORIG_REF_NAME==mb_design_fit_timer_0_0} -quiet] -quiet
 
+# IP: bd/mb_design/ip/mb_design_DistanciaEuclidiana_0_1/mb_design_DistanciaEuclidiana_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mb_design_DistanciaEuclidiana_0_1 || ORIG_REF_NAME==mb_design_DistanciaEuclidiana_0_1} -quiet] -quiet
+
 # XDC: bd/mb_design/mb_design_ooc.xdc
