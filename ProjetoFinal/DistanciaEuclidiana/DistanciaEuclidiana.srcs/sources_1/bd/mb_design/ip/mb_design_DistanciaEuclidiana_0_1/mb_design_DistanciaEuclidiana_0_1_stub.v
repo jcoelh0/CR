@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Fri Jun 19 11:09:00 2020
+// Date        : Fri Jun 19 11:08:59 2020
 // Host        : DESKTOP-T839HQ8 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               C:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.srcs/sources_1/bd/mb_design/ip/mb_design_DistanciaEuclidiana_0_1/mb_design_DistanciaEuclidiana_0_1_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top mb_design_DistanciaEuclidiana_0_1 -prefix
+//               mb_design_DistanciaEuclidiana_0_1_ mb_design_DistanciaEuclidiana_0_1_stub.v
 // Design      : mb_design_DistanciaEuclidiana_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1

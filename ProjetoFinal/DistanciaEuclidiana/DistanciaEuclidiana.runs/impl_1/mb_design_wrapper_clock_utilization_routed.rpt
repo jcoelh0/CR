@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Fri Jun 19 11:16:09 2020
+| Date         : Sat Jun 20 18:09:09 2020
 | Host         : DESKTOP-T839HQ8 running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file mb_design_wrapper_clock_utilization_routed.rpt
 | Design       : mb_design_wrapper

@@ -30,10 +30,7 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
-set_property ip_repo_paths {
-  c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1
-  c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.0
-} [current_project]
+set_property ip_repo_paths c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1 [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
