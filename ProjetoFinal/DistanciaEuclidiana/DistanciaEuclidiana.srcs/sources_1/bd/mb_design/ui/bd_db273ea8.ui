@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.0371",
-   "Default View_TopLeft":"1279,266",
+   "Default View_TopLeft":"1280,268",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
@@ -48,21 +48,21 @@ preplace netloc microblaze_0_axi_periph_M07_AXI 1 5 3 1500 70 NJ 70 2290
 preplace netloc axi_gpio_leds_GPIO 1 8 1 NJ 220
 preplace netloc axi_gpio_buttons_GPIO 1 8 1 NJ 350
 preplace netloc axi_uartlite_0_UART 1 8 1 NJ 900
-preplace netloc microblaze_0_axi_periph_M02_AXI 1 7 1 2310 60n
-preplace netloc microblaze_0_axi_dp 1 6 1 1970 160n
-preplace netloc microblaze_0_interrupt 1 5 1 1470 850n
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 7 1 N 340
+preplace netloc axi_gpio_display_GPIO 1 8 1 NJ 70
 preplace netloc microblaze_0_ilmb_1 1 6 1 N 930
+preplace netloc microblaze_0_interrupt 1 5 1 1470 850n
+preplace netloc axi_gpio_display_GPIO2 1 8 1 2620J 90n
 preplace netloc microblaze_0_axi_periph_M05_AXI 1 7 1 2350 420n
 preplace netloc microblaze_0_axi_periph_M04_AXI 1 7 1 2360 400n
 preplace netloc microblaze_0_debug 1 5 1 1490 1040n
-preplace netloc microblaze_0_axi_periph_M01_AXI 1 7 1 N 340
-preplace netloc axi_gpio_display_GPIO2 1 8 1 2620J 90n
 preplace netloc microblaze_0_dlmb_1 1 6 1 N 910
-preplace netloc microblaze_0_axi_periph_M03_AXI 1 7 1 2300 200n
 preplace netloc axi_gpio_switches_GPIO 1 8 1 NJ 510
 preplace netloc microblaze_0_intc_axi 1 4 4 1170 90 NJ 90 NJ 90 2280
 preplace netloc microblaze_0_axi_periph_M06_AXI 1 7 1 2310 440n
-preplace netloc axi_gpio_display_GPIO 1 8 1 NJ 70
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 7 1 2310 60n
+preplace netloc microblaze_0_axi_dp 1 6 1 1970 160n
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 7 1 2300 200n
 levelinfo -pg 1 -10 110 400 750 1040 1340 1740 2140 2490 2650
 pagesize -pg 1 -db -bbox -sgen -120 0 2860 1150
 "

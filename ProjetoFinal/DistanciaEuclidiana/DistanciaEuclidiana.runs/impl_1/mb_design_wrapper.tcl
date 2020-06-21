@@ -72,7 +72,7 @@ set rc [catch {
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.cache/wt [current_project]
   set_property parent.project_path C:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.xpr [current_project]
-  set_property ip_repo_paths c:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1 [current_project]
+  set_property ip_repo_paths C:/Users/jcoel/Desktop/CR/ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1 [current_project]
   update_ip_catalog
   set_property ip_output_repo C:/Users/jcoel/Desktop/CR/ProjetoFinal/DistanciaEuclidiana/DistanciaEuclidiana.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
