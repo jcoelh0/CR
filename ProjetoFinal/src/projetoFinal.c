@@ -85,7 +85,7 @@ int main() {
 
 	init_platform();
 
-	int numRuns = 1000;
+	int numRuns = 10000;
 	int sumHw, sumSw = 0;
 
 	for (int i = 0; i < numRuns; i++) {
