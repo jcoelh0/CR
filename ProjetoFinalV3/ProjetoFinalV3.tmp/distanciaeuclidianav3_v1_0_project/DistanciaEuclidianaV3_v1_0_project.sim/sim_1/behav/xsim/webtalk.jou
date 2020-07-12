@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Jul 11 19:49:46 2020
+# Process ID: 16192
+# Current directory: c:/users/jcoel/desktop/cr/projetofinalv3/projetofinalv3.tmp/distanciaeuclidianav3_v1_0_project/DistanciaEuclidianaV3_v1_0_project.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source c:/users/jcoel/desktop/cr/projetofinalv3/projetofinalv3.tmp/distanciaeuclidianav3_v1_0_project/DistanciaEuclidianaV3_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/testbench_DistEucl_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: c:/users/jcoel/desktop/cr/projetofinalv3/projetofinalv3.tmp/distanciaeuclidianav3_v1_0_project/DistanciaEuclidianaV3_v1_0_project.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: c:/users/jcoel/desktop/cr/projetofinalv3/projetofinalv3.tmp/distanciaeuclidianav3_v1_0_project/DistanciaEuclidianaV3_v1_0_project.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source c:/users/jcoel/desktop/cr/projetofinalv3/projetofinalv3.tmp/distanciaeuclidianav3_v1_0_project/DistanciaEuclidianaV3_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/testbench_DistEucl_behav/webtalk/xsim_webtalk.tcl -notrace
