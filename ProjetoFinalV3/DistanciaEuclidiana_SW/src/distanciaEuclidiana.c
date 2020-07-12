@@ -113,7 +113,7 @@ int main() {
 		double y0 = 2;
 		double z0 = 1;
 		double x1 = 9.0;
-		double y1 = 20.0;
+		double y1 = 1000.0;
 		double z1 = 37.0;
 
 		u32 x0HW = float_to_fixed(x0);
@@ -189,6 +189,7 @@ int main() {
 
 		// Software only
 		RestartPerformanceTimer();
+
 		double b4sqrt= (((x1)-x0)*((x1)-x0))    +    (((y1)-(y0))*((y1)-(y0)))    +    (((z1)-(z0))*((z1)-(z0)));
 		double swResult = sqrt(b4sqrt);
 

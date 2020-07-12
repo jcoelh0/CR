@@ -1,7 +1,7 @@
-Running: xsim.dir/testbench_DistEucl_behav/xsimk.exe -simmode gui -wdb testbench_DistEucl_behav.wdb -simrunnum 0 -socket 55236
+Running: xsim.dir/testbench_DistEucl_behav/xsimk.exe -simmode gui -wdb testbench_DistEucl_behav.wdb -simrunnum 0 -socket 57305
 Design successfully loaded
-Design Loading Memory Usage: 5260 KB (Peak: 5260 KB)
+Design Loading Memory Usage: 5288 KB (Peak: 5288 KB)
 Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 5940 KB (Peak: 5940 KB)
-Simulation CPU Usage: 15 ms
+Simulation Memory Usage: 5956 KB (Peak: 5956 KB)
+Simulation CPU Usage: 78 ms

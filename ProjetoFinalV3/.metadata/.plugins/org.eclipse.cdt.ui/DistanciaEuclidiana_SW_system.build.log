@@ -1,6 +1,6 @@
-10:08:40 **** Incremental Build of configuration Debug for project DistanciaEuclidiana_SW_system ****
+14:39:27 **** Incremental Build of configuration Debug for project DistanciaEuclidiana_SW_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
 
-10:08:40 Build Finished (took 184ms)
+14:39:27 Build Finished (took 201ms)
 

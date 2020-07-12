@@ -1,4 +1,4 @@
-12:29:42 **** Incremental Build of configuration Debug for project DistanciaEuclidiana_SW ****
+14:47:35 **** Incremental Build of configuration Debug for project DistanciaEuclidiana_SW ****
 make all 
 'Building file: ../src/distanciaEuclidiana.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -13,9 +13,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/jcoel/Desktop/CR/ProjetoFinalV3/m
 'Invoking: MicroBlaze Print Size'
 mb-size DistanciaEuclidiana_SW.elf  |tee "DistanciaEuclidiana_SW.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  36980	    716	   3112	  40808	   9f68	DistanciaEuclidiana_SW.elf
+  36712	    716	   3108	  40536	   9e58	DistanciaEuclidiana_SW.elf
 'Finished building: DistanciaEuclidiana_SW.elf.size'
 ' '
 
-12:29:43 Build Finished (took 840ms)
+14:47:37 Build Finished (took 1s.257ms)
 

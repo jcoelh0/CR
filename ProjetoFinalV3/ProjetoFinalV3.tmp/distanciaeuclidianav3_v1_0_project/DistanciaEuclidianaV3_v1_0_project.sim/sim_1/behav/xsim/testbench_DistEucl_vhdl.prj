@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../ip_repo/DistanciaEuclidianaV3_1.0/src/DistanciaEuclidiana.vhd" \
+"../../../../../../../ProjetoFinal/ip_repo/DistanciaEuclidiana_1.1/src/testbench_DistEucl.vhd" \
+
+# Do not sort compile order
+nosort
