@@ -2975,3 +2975,417 @@ con
 10:02:45 INFO  : Jtag cable 'Digilent Nexys4 210274505280A' is selected.
 10:02:45 INFO  : 'jtag frequency' command is executed.
 10:02:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0' command is executed.
+10:02:47 INFO  : FPGA configured successfully with bitstream "C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit"
+10:02:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:02:48 INFO  : Context for processor 'microblaze_0' is selected.
+10:02:48 INFO  : System reset is completed.
+10:02:51 INFO  : 'after 3000' command is executed.
+10:02:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:02:51 INFO  : The application 'C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf' is downloaded to processor 'microblaze_0'.
+10:02:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0
+fpga -file C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf
+----------------End of Script----------------
+
+10:02:51 INFO  : Memory regions updated for context MicroBlaze #0
+10:02:51 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:02:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:02:51 INFO  : 'con' command is executed.
+10:02:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:02:51 INFO  : Launch script is exported to file 'C:\Users\jcoel\Desktop\CR\ProjetoFinalV3\.sdk\launch_scripts\single_application_debug\systemdebugger_distanciaeuclidiana_sw_system_standalone.tcl'
+10:06:44 INFO  : Checking for BSP changes to sync application flags for project 'DistanciaEuclidiana_SW'...
+10:06:49 INFO  : Disconnected from the channel tcfchan#88.
+10:06:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:06:49 INFO  : Jtag cable 'Digilent Nexys4 210274505280A' is selected.
+10:06:49 INFO  : 'jtag frequency' command is executed.
+10:06:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0' command is executed.
+10:06:51 INFO  : FPGA configured successfully with bitstream "C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit"
+10:06:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:06:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:51 INFO  : System reset is completed.
+10:06:54 INFO  : 'after 3000' command is executed.
+10:06:54 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:55 INFO  : The application 'C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf' is downloaded to processor 'microblaze_0'.
+10:06:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0
+fpga -file C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf
+----------------End of Script----------------
+
+10:06:55 INFO  : Memory regions updated for context MicroBlaze #0
+10:06:55 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:06:55 INFO  : Context for processor 'microblaze_0' is selected.
+10:06:55 INFO  : 'con' command is executed.
+10:06:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:06:55 INFO  : Launch script is exported to file 'C:\Users\jcoel\Desktop\CR\ProjetoFinalV3\.sdk\launch_scripts\single_application_debug\systemdebugger_distanciaeuclidiana_sw_system_standalone.tcl'
+10:08:38 INFO  : Checking for BSP changes to sync application flags for project 'DistanciaEuclidiana_SW'...
+10:08:45 INFO  : Disconnected from the channel tcfchan#89.
+10:08:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:08:45 INFO  : Jtag cable 'Digilent Nexys4 210274505280A' is selected.
+10:08:45 INFO  : 'jtag frequency' command is executed.
+10:08:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0' command is executed.
+10:08:48 INFO  : FPGA configured successfully with bitstream "C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit"
+10:08:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:08:48 INFO  : Context for processor 'microblaze_0' is selected.
+10:08:48 INFO  : System reset is completed.
+10:08:51 INFO  : 'after 3000' command is executed.
+10:08:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:08:51 INFO  : The application 'C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf' is downloaded to processor 'microblaze_0'.
+10:08:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0
+fpga -file C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf
+----------------End of Script----------------
+
+10:08:51 INFO  : Memory regions updated for context MicroBlaze #0
+10:08:51 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:08:51 INFO  : Context for processor 'microblaze_0' is selected.
+10:08:51 INFO  : 'con' command is executed.
+10:08:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:08:51 INFO  : Launch script is exported to file 'C:\Users\jcoel\Desktop\CR\ProjetoFinalV3\.sdk\launch_scripts\single_application_debug\systemdebugger_distanciaeuclidiana_sw_system_standalone.tcl'
+10:09:19 INFO  : Checking for BSP changes to sync application flags for project 'DistanciaEuclidiana_SW'...
+10:09:24 INFO  : Disconnected from the channel tcfchan#90.
+10:09:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:09:24 INFO  : Jtag cable 'Digilent Nexys4 210274505280A' is selected.
+10:09:24 INFO  : 'jtag frequency' command is executed.
+10:09:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0' command is executed.
+10:09:27 INFO  : FPGA configured successfully with bitstream "C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit"
+10:09:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:09:27 INFO  : Context for processor 'microblaze_0' is selected.
+10:09:27 INFO  : System reset is completed.
+10:09:30 INFO  : 'after 3000' command is executed.
+10:09:30 INFO  : Context for processor 'microblaze_0' is selected.
+10:09:30 INFO  : The application 'C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf' is downloaded to processor 'microblaze_0'.
+10:09:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0
+fpga -file C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf
+----------------End of Script----------------
+
+10:09:30 INFO  : Memory regions updated for context MicroBlaze #0
+10:09:30 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:09:30 INFO  : Context for processor 'microblaze_0' is selected.
+10:09:30 INFO  : 'con' command is executed.
+10:09:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:09:30 INFO  : Launch script is exported to file 'C:\Users\jcoel\Desktop\CR\ProjetoFinalV3\.sdk\launch_scripts\single_application_debug\systemdebugger_distanciaeuclidiana_sw_system_standalone.tcl'
+10:11:01 INFO  : Checking for BSP changes to sync application flags for project 'DistanciaEuclidiana_SW'...
+10:11:05 INFO  : Disconnected from the channel tcfchan#91.
+10:11:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:11:05 INFO  : Jtag cable 'Digilent Nexys4 210274505280A' is selected.
+10:11:05 INFO  : 'jtag frequency' command is executed.
+10:11:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0' command is executed.
+10:11:07 INFO  : FPGA configured successfully with bitstream "C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit"
+10:11:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:11:07 INFO  : Context for processor 'microblaze_0' is selected.
+10:11:07 INFO  : System reset is completed.
+10:11:10 INFO  : 'after 3000' command is executed.
+10:11:10 INFO  : Context for processor 'microblaze_0' is selected.
+10:11:10 INFO  : The application 'C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf' is downloaded to processor 'microblaze_0'.
+10:11:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0
+fpga -file C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf
+----------------End of Script----------------
+
+10:11:11 INFO  : Memory regions updated for context MicroBlaze #0
+10:11:11 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:11:11 INFO  : Context for processor 'microblaze_0' is selected.
+10:11:11 INFO  : 'con' command is executed.
+10:11:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:11:11 INFO  : Launch script is exported to file 'C:\Users\jcoel\Desktop\CR\ProjetoFinalV3\.sdk\launch_scripts\single_application_debug\systemdebugger_distanciaeuclidiana_sw_system_standalone.tcl'
+10:14:00 INFO  : Checking for BSP changes to sync application flags for project 'DistanciaEuclidiana_SW'...
+10:14:05 INFO  : Disconnected from the channel tcfchan#92.
+10:14:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:14:05 INFO  : Jtag cable 'Digilent Nexys4 210274505280A' is selected.
+10:14:05 INFO  : 'jtag frequency' command is executed.
+10:14:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0' command is executed.
+10:14:07 INFO  : FPGA configured successfully with bitstream "C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit"
+10:14:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:14:08 INFO  : Context for processor 'microblaze_0' is selected.
+10:14:08 INFO  : System reset is completed.
+10:14:11 INFO  : 'after 3000' command is executed.
+10:14:11 INFO  : Context for processor 'microblaze_0' is selected.
+10:14:11 INFO  : The application 'C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf' is downloaded to processor 'microblaze_0'.
+10:14:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0
+fpga -file C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf
+----------------End of Script----------------
+
+10:14:11 INFO  : Memory regions updated for context MicroBlaze #0
+10:14:11 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:14:11 INFO  : Context for processor 'microblaze_0' is selected.
+10:14:11 INFO  : 'con' command is executed.
+10:14:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:14:11 INFO  : Launch script is exported to file 'C:\Users\jcoel\Desktop\CR\ProjetoFinalV3\.sdk\launch_scripts\single_application_debug\systemdebugger_distanciaeuclidiana_sw_system_standalone.tcl'
+10:14:34 INFO  : Checking for BSP changes to sync application flags for project 'DistanciaEuclidiana_SW'...
+10:14:37 INFO  : Disconnected from the channel tcfchan#93.
+10:14:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:14:38 INFO  : Jtag cable 'Digilent Nexys4 210274505280A' is selected.
+10:14:38 INFO  : 'jtag frequency' command is executed.
+10:14:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0' command is executed.
+10:14:40 INFO  : FPGA configured successfully with bitstream "C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit"
+10:14:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:14:40 INFO  : Context for processor 'microblaze_0' is selected.
+10:14:40 INFO  : System reset is completed.
+10:14:43 INFO  : 'after 3000' command is executed.
+10:14:43 INFO  : Context for processor 'microblaze_0' is selected.
+10:14:43 INFO  : The application 'C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf' is downloaded to processor 'microblaze_0'.
+10:14:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0
+fpga -file C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf
+----------------End of Script----------------
+
+10:14:43 INFO  : Memory regions updated for context MicroBlaze #0
+10:14:43 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:14:43 INFO  : Context for processor 'microblaze_0' is selected.
+10:14:43 INFO  : 'con' command is executed.
+10:14:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:14:43 INFO  : Launch script is exported to file 'C:\Users\jcoel\Desktop\CR\ProjetoFinalV3\.sdk\launch_scripts\single_application_debug\systemdebugger_distanciaeuclidiana_sw_system_standalone.tcl'
+10:16:15 INFO  : Checking for BSP changes to sync application flags for project 'DistanciaEuclidiana_SW'...
+10:16:20 INFO  : Disconnected from the channel tcfchan#94.
+10:16:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:16:20 INFO  : Jtag cable 'Digilent Nexys4 210274505280A' is selected.
+10:16:20 INFO  : 'jtag frequency' command is executed.
+10:16:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0' command is executed.
+10:16:23 INFO  : FPGA configured successfully with bitstream "C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit"
+10:16:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:16:23 INFO  : Context for processor 'microblaze_0' is selected.
+10:16:23 INFO  : System reset is completed.
+10:16:26 INFO  : 'after 3000' command is executed.
+10:16:26 INFO  : Context for processor 'microblaze_0' is selected.
+10:16:26 INFO  : The application 'C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf' is downloaded to processor 'microblaze_0'.
+10:16:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0
+fpga -file C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf
+----------------End of Script----------------
+
+10:16:26 INFO  : Memory regions updated for context MicroBlaze #0
+10:16:26 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:16:26 INFO  : Context for processor 'microblaze_0' is selected.
+10:16:26 INFO  : 'con' command is executed.
+10:16:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:16:26 INFO  : Launch script is exported to file 'C:\Users\jcoel\Desktop\CR\ProjetoFinalV3\.sdk\launch_scripts\single_application_debug\systemdebugger_distanciaeuclidiana_sw_system_standalone.tcl'
+10:17:56 INFO  : Checking for BSP changes to sync application flags for project 'DistanciaEuclidiana_SW'...
+10:18:02 INFO  : Disconnected from the channel tcfchan#95.
+10:18:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:02 INFO  : Jtag cable 'Digilent Nexys4 210274505280A' is selected.
+10:18:02 INFO  : 'jtag frequency' command is executed.
+10:18:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0' command is executed.
+10:18:05 INFO  : FPGA configured successfully with bitstream "C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit"
+10:18:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:18:05 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:05 INFO  : System reset is completed.
+10:18:08 INFO  : 'after 3000' command is executed.
+10:18:08 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:08 INFO  : The application 'C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf' is downloaded to processor 'microblaze_0'.
+10:18:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0
+fpga -file C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf
+----------------End of Script----------------
+
+10:18:08 INFO  : Memory regions updated for context MicroBlaze #0
+10:18:08 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:18:08 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:08 INFO  : 'con' command is executed.
+10:18:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:18:08 INFO  : Launch script is exported to file 'C:\Users\jcoel\Desktop\CR\ProjetoFinalV3\.sdk\launch_scripts\single_application_debug\systemdebugger_distanciaeuclidiana_sw_system_standalone.tcl'
+10:21:13 INFO  : Checking for BSP changes to sync application flags for project 'DistanciaEuclidiana_SW'...
+10:21:17 INFO  : Disconnected from the channel tcfchan#96.
+10:21:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:21:18 INFO  : Jtag cable 'Digilent Nexys4 210274505280A' is selected.
+10:21:18 INFO  : 'jtag frequency' command is executed.
+10:21:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0' command is executed.
+10:21:20 INFO  : FPGA configured successfully with bitstream "C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit"
+10:21:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:21:20 INFO  : Context for processor 'microblaze_0' is selected.
+10:21:20 INFO  : System reset is completed.
+10:21:23 INFO  : 'after 3000' command is executed.
+10:21:23 INFO  : Context for processor 'microblaze_0' is selected.
+10:21:23 INFO  : The application 'C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf' is downloaded to processor 'microblaze_0'.
+10:21:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0
+fpga -file C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf
+----------------End of Script----------------
+
+10:21:23 INFO  : Memory regions updated for context MicroBlaze #0
+10:21:23 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:21:23 INFO  : Context for processor 'microblaze_0' is selected.
+10:21:23 INFO  : 'con' command is executed.
+10:21:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:21:23 INFO  : Launch script is exported to file 'C:\Users\jcoel\Desktop\CR\ProjetoFinalV3\.sdk\launch_scripts\single_application_debug\systemdebugger_distanciaeuclidiana_sw_system_standalone.tcl'
+10:22:53 INFO  : Checking for BSP changes to sync application flags for project 'DistanciaEuclidiana_SW'...
+10:22:58 INFO  : Disconnected from the channel tcfchan#97.
+10:22:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:22:58 INFO  : Jtag cable 'Digilent Nexys4 210274505280A' is selected.
+10:22:58 INFO  : 'jtag frequency' command is executed.
+10:22:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0' command is executed.
+10:23:00 INFO  : FPGA configured successfully with bitstream "C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit"
+10:23:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:23:00 INFO  : Context for processor 'microblaze_0' is selected.
+10:23:00 INFO  : System reset is completed.
+10:23:03 INFO  : 'after 3000' command is executed.
+10:23:03 INFO  : Context for processor 'microblaze_0' is selected.
+10:23:04 INFO  : The application 'C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf' is downloaded to processor 'microblaze_0'.
+10:23:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0
+fpga -file C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf
+----------------End of Script----------------
+
+10:23:04 INFO  : Memory regions updated for context MicroBlaze #0
+10:23:04 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:23:04 INFO  : Context for processor 'microblaze_0' is selected.
+10:23:04 INFO  : 'con' command is executed.
+10:23:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:23:04 INFO  : Launch script is exported to file 'C:\Users\jcoel\Desktop\CR\ProjetoFinalV3\.sdk\launch_scripts\single_application_debug\systemdebugger_distanciaeuclidiana_sw_system_standalone.tcl'
+10:24:22 INFO  : Checking for BSP changes to sync application flags for project 'DistanciaEuclidiana_SW'...
+10:24:26 INFO  : Disconnected from the channel tcfchan#98.
+10:24:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:24:26 INFO  : Jtag cable 'Digilent Nexys4 210274505280A' is selected.
+10:24:26 INFO  : 'jtag frequency' command is executed.
+10:24:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0' command is executed.
+10:24:28 INFO  : FPGA configured successfully with bitstream "C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit"
+10:24:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:24:28 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:28 INFO  : System reset is completed.
+10:24:31 INFO  : 'after 3000' command is executed.
+10:24:31 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:32 INFO  : The application 'C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf' is downloaded to processor 'microblaze_0'.
+10:24:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505280A" && level==0} -index 0
+fpga -file C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/jcoel/Desktop/CR/ProjetoFinalV3/DistanciaEuclidiana_SW/Debug/DistanciaEuclidiana_SW.elf
+----------------End of Script----------------
+
+10:24:32 INFO  : Memory regions updated for context MicroBlaze #0
+10:24:32 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+10:24:32 INFO  : Context for processor 'microblaze_0' is selected.
+10:24:32 INFO  : 'con' command is executed.
+10:24:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:24:32 INFO  : Launch script is exported to file 'C:\Users\jcoel\Desktop\CR\ProjetoFinalV3\.sdk\launch_scripts\single_application_debug\systemdebugger_distanciaeuclidiana_sw_system_standalone.tcl'

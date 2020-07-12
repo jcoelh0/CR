@@ -1,34 +1,12 @@
 Nothing to build in platform 'mb_design_wrapper'
 
-10:02:39 **** Incremental Build of configuration Debug for project DistanciaEuclidiana_SW ****
+10:24:22 **** Incremental Build of configuration Debug for project DistanciaEuclidiana_SW ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/jcoel/Desktop/CR/ProjetoFinalV3/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'float_to_fixed':
-../src/helloworld.c:84:11: warning: implicit declaration of function 'pow' [-Wimplicit-function-declaration]
-  return x*pow(2,16);
-           ^~~
-../src/helloworld.c:84:11: warning: incompatible implicit declaration of built-in function 'pow'
-../src/helloworld.c:84:11: note: include '<math.h>' or provide a declaration of 'pow'
-../src/helloworld.c:55:1:
-+#include <math.h>
- 
-../src/helloworld.c:84:11:
-  return x*pow(2,16);
-           ^~~
-../src/helloworld.c: In function 'fixed_to_float':
-../src/helloworld.c:88:19: warning: incompatible implicit declaration of built-in function 'pow'
-  return (double)x*pow(2,-16);
-                   ^~~
-../src/helloworld.c:88:19: note: include '<math.h>' or provide a declaration of 'pow'
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:164:21: warning: implicit declaration of function 'sqrt' [-Wimplicit-function-declaration]
-   double swResult = sqrt(b4sqrt);
-                     ^~~~
-../src/helloworld.c:164:21: warning: incompatible implicit declaration of built-in function 'sqrt'
-../src/helloworld.c:164:21: note: include '<math.h>' or provide a declaration of 'sqrt'
-../src/helloworld.c:151:16: warning: unused variable 'hwResult_debug' [-Wunused-variable]
+../src/helloworld.c:160:16: warning: unused variable 'hwResult_debug' [-Wunused-variable]
    unsigned int hwResult_debug = (u32) ((resultBits));
                 ^~~~~~~~~~~~~~
 'Finished building: ../src/helloworld.c'
@@ -41,6 +19,6 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/jcoel/Desktop/CR/ProjetoFinalV3/m
 'Invoking: MicroBlaze Print Size'
 mb-size DistanciaEuclidiana_SW.elf  |tee "DistanciaEuclidiana_SW.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  19720	    716	   3108	  23544	   5bf8	DistanciaEuclidiana_SW.elf
+  20100	    716	   3112	  23928	   5d78	DistanciaEuclidiana_SW.elf
 'Finished building: DistanciaEuclidiana_SW.elf.size'
 ' '
