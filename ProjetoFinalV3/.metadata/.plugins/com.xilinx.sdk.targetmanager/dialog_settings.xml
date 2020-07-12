@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Local" key="DistanciaEuclidiana_SW-target"/>
+	<item value="bootloop" key="DistanciaEuclidiana_SW-microblaze_0-initElf"/>
+	<item value="C:\Users\jcoel\Desktop\CR\ProjetoFinalV3\download.bit" key="DistanciaEuclidiana_SW-bitFile"/>
+	<item value="Auto Detect" key="DistanciaEuclidiana_SW-device"/>
+	<item value="DistanciaEuclidiana_SW" key="programfpga.sdxproject"/>
+	<item value="false" key="DistanciaEuclidiana_SW-skip_rev_check"/>
+	<item value="C:\Users\jcoel\Desktop\CR\ProjetoFinalV3\mb_design_wrapper.mmi" key="DistanciaEuclidiana_SW-bmmFile"/>
+	<item value="false" key="DistanciaEuclidiana_SW-partial_bit"/>
+</section>

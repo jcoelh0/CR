@@ -52,7 +52,6 @@
 #include "fsl.h"
 #include "xtmrctr_l.h"
 #include "xil_printf.h"
-#include <ctype.h>
 #include <math.h>
 
 typedef int bool;
@@ -87,7 +86,7 @@ u32 float_to_fixed(double x){
 }
 
 double fixed_to_float(u32 x){
-	return x*pow(2,-16);
+	return (double)x*pow(2,-16);
 }
 
 int main() {
@@ -110,12 +109,12 @@ int main() {
 		int y1 = rand()%10000;
 		int z1 = rand()%10000;*/
 
-		double x0 = 0;
-		double y0 = 0;
-		double z0 = 0;
-		double x1 = 3.0;
-		double y1 = 3.0;
-		double z1 = 3.0;
+		double x0 = 4;
+		double y0 = 2;
+		double z0 = 1;
+		double x1 = 9.0;
+		double y1 = 20.0;
+		double z1 = 37.0;
 
 		u32 x0HW = float_to_fixed(x0);
 		u32 y0HW = float_to_fixed(y0);
@@ -146,27 +145,47 @@ int main() {
 		sumHw += timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000);
 
 		if(numRuns < 4)
-			xil_printf("\n\rEnviado para o periferico: (%d, %d, %d); (%d, %d, %d)",
-				fixed_to_float(Xil_In32(XPAR_DISTANCIAEUCLIDIANAV3_0_S00_AXI_BASEADDR)),
-				Xil_In32(XPAR_DISTANCIAEUCLIDIANAV3_0_S00_AXI_BASEADDR + 4),
-				Xil_In32(XPAR_DISTANCIAEUCLIDIANAV3_0_S00_AXI_BASEADDR + 8),
-				Xil_In32(XPAR_DISTANCIAEUCLIDIANAV3_0_S00_AXI_BASEADDR + 12),
-				Xil_In32(XPAR_DISTANCIAEUCLIDIANAV3_0_S00_AXI_BASEADDR + 16),
-				fixed_to_float(Xil_In32(XPAR_DISTANCIAEUCLIDIANAV3_0_S00_AXI_BASEADDR + 20)));
+			xil_printf("\n\rEnviado para o periferico: (%d, %x, %d); (%x, %d, %x)",
+				Xil_In32(XPAR_DISTANCIAEUCLIDIANAV3_0_S00_AXI_BASEADDR)>>16,
+				Xil_In32(XPAR_DISTANCIAEUCLIDIANAV3_0_S00_AXI_BASEADDR + 4)>>16,
+				Xil_In32(XPAR_DISTANCIAEUCLIDIANAV3_0_S00_AXI_BASEADDR + 8)>>16,
+				Xil_In32(XPAR_DISTANCIAEUCLIDIANAV3_0_S00_AXI_BASEADDR + 12)>>16,
+				Xil_In32(XPAR_DISTANCIAEUCLIDIANAV3_0_S00_AXI_BASEADDR + 16)>>16,
+				Xil_In32(XPAR_DISTANCIAEUCLIDIANAV3_0_S00_AXI_BASEADDR + 20)>>16);
 
 
-		int hwResult_decimal = (u16) (resultBits);//will return the first 16bits
-		int hwResult_inteira = (u16) (resultBits >> 16);//shift and return the first 16bits
+		int hwResult_decimal = (u16) (resultBits);//will return the least significant 16bits
+		int hwResult_inteira = (u32) (resultBits >> 16);//shift and return the least significant 16bits
 
-		unsigned int hwResult_debug = (u32) ((resultBits));
+		int count = 0;
+		float sum = 0;
+		while (count != 16)
+		{
+		    unsigned long long bit = hwResult_decimal & 1;
+		    sum += (int)bit * pow(2,-(16-count));
+		    //xil_printf("\n\Debug bit: (%d)",bit);
+		    //2^(-3)+2^(-4)+2^(-7)+2^(-11)+2^(-12)+2^(-14)+2^(-15)+2^(-16)
+		    hwResult_decimal >>= 1;
+		    count++;
+		}
 
+		int whole2 = sum;
+		int final_float = (sum - whole2)*10000000000;
+
+
+		/*
 		xil_printf("\n\rDebug: %08x", hwResult_inteira);
 		xil_printf("\n\rDebug: %08X", hwResult_decimal);
+		xil_printf("\n\rDebug: %d", hwResult_decimal*pow(2,-16));
+		//xil_printf("\n\rDebug: %d", sum);
+		xil_printf("\n\rDebug: %08x", A );
+		xil_printf("\n\rDebug: %d", A );
 		xil_printf("\n\rDebug: %08X", resultBits);
 		xil_printf("\n\rDebug: %d", Xil_In32(XPAR_DISTANCIAEUCLIDIANAV3_0_S00_AXI_BASEADDR + 24) );
+		*/
 
 		if(numRuns < 4)
-			xil_printf("\n\rResultado Obtido HW: %d.%1d\n", hwResult_inteira, hwResult_decimal);
+			xil_printf("\n\rResultado Obtido HW: %d.%1d\n", hwResult_inteira, final_float);
 
 		// Software only
 		RestartPerformanceTimer();

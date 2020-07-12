@@ -1,25 +1,21 @@
-10:24:22 **** Incremental Build of configuration Debug for project DistanciaEuclidiana_SW ****
+12:29:42 **** Incremental Build of configuration Debug for project DistanciaEuclidiana_SW ****
 make all 
-'Building file: ../src/helloworld.c'
+'Building file: ../src/distanciaEuclidiana.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/jcoel/Desktop/CR/ProjetoFinalV3/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:160:16: warning: unused variable 'hwResult_debug' [-Wunused-variable]
-   unsigned int hwResult_debug = (u32) ((resultBits));
-                ^~~~~~~~~~~~~~
-'Finished building: ../src/helloworld.c'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/distanciaEuclidiana.o" -IC:/Users/jcoel/Desktop/CR/ProjetoFinalV3/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/distanciaEuclidiana.d" -MT"src/distanciaEuclidiana.o" -o "src/distanciaEuclidiana.o" "../src/distanciaEuclidiana.c"
+'Finished building: ../src/distanciaEuclidiana.c'
 ' '
 'Building target: DistanciaEuclidiana_SW.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/jcoel/Desktop/CR/ProjetoFinalV3/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "DistanciaEuclidiana_SW.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/jcoel/Desktop/CR/ProjetoFinalV3/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "DistanciaEuclidiana_SW.elf"  ./src/distanciaEuclidiana.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: DistanciaEuclidiana_SW.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size DistanciaEuclidiana_SW.elf  |tee "DistanciaEuclidiana_SW.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  20100	    716	   3112	  23928	   5d78	DistanciaEuclidiana_SW.elf
+  36980	    716	   3112	  40808	   9f68	DistanciaEuclidiana_SW.elf
 'Finished building: DistanciaEuclidiana_SW.elf.size'
 ' '
 
-10:24:22 Build Finished (took 838ms)
+12:29:43 Build Finished (took 840ms)
 
